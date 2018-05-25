@@ -555,12 +555,12 @@ footer {
 .copyright {
     margin: 0;
     padding: 20px 0px;
-    text-align: left;
+    text-align: center;
 }
 .designed {
     margin: 0;
     padding: 20px 0px;
-    text-align: right;
+    text-align: left;
 }
 .designed a:hover {
     color: #e66f69;
