@@ -456,6 +456,7 @@ header{
 
 .moreDetails {
     color: #fff;
+    
 }
 .con-title {
     font-weight: 300;
@@ -548,6 +549,9 @@ header{
 }
 .wordpress{
 	background-image: url(../images/wordpress.png);
+}
+.github{
+     background-image: url(../images/GitHubIcon.png);
 }
 
 
