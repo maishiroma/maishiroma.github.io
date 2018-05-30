@@ -69,7 +69,7 @@ a:hover,a:active,a:focus{
     font-weight: 300;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .block_title:before,.block_title:after {
     content: "";
@@ -451,12 +451,12 @@ header{
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     position: relative;
-    padding: 80px 0px 60px 0px;
 }
 
 .moreDetails {
     color: #fff;
-    
+    text-align: center;
+    padding-right: 50px;
 }
 .con-title {
     font-weight: 300;
