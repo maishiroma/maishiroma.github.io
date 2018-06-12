@@ -45,7 +45,7 @@
         </header>
 
         <!-- Navigation area -->
-        <section id="navigation">
+        <section id="navigation" onclick="closePreview()">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6">
@@ -58,10 +58,9 @@
                                  <div class="arrow-up"></div>
                                  <ul>
                                      <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#services">Service <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
-                                     <li><a data-scroll href="#testimonial">Testimonial <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
-                                     <li><a data-scroll href="#contact">Contact <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#services">About Me <i class="pe-7s-user"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-folder"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#contact">Contact <i class="pe-7s-comment"></i></a><span class="menu-effect"></span></li>
                                  </ul>
                              </div>
                         </div>
@@ -105,23 +104,7 @@
                             <figcaption>
                                 <h3>Settings</h3>
                                 <span>Jacob Cummings</span>
-                                <button id="firstButton" class="button">Take a look</button>
-
-                                <div id="firstModel" class="modal">
-                                     <div class="modal-content">
-                                          <div class="modal-header">
-                                               <span class="close">&times</span>
-                                               <h2>Modal Header</h2>
-                                        </div>
-                                        <div class="modal-body">
-                                             <p>Hello World!</p>
-                                             <p>What's up</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                             <p>Modal Footer</p>
-                                        </div>
-                                     </div>
-                                </div>
+                                <button id="firstButton" class="button" onclick="expandPreview('firstButton')">Take a look</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -179,6 +162,26 @@
                         <div class="btn-center"><a href="#" class="big button">View all</a></div>
                     </div>
                 </div>
+
+                <div id="Modal" class="modal">
+                     <div class="modal-content">
+                          <div class="modal-header">
+                               <span class="close" onclick="closePreview()">&times</span>
+                               <h2 id="ModalHeader">Modal Header</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                 <img id="ModalImage" src="assets/images/portfolio1.jpg" alt="portfolio image">
+                            </div>
+                            <!--<iframe id="ModalVideo" width="560" height="315" src="https://www.youtube.com/embed/UsKU4cPQtnk" frameborder="0" allowfullscreen></iframe> -->
+                             <p id="ModalParagraph" class="modal-body-text">Hello World!</p>
+                        </div>
+                        <div class="modal-footer">
+                             <p>Modal Footer</p>
+                        </div>
+                     </div>
+                </div>
+
             </div><!-- container -->
         </section><!-- portfolio -->
 
