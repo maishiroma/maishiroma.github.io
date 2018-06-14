@@ -91,9 +91,7 @@
             </div>
         </section><!-- services -->
 
-
         <!-- Portfolio Area -->
-
         <section id="portfolio" class="portfolio-area">
             <div class="container">
                 <h2 class="block_title">My Works</h2>
@@ -163,17 +161,34 @@
                     </div>
                 </div>
 
-                <div id="Modal" class="modal">
+                <div id="Modal" class="modal" onload="LoadYouTubeIframeAPI()">
                      <div class="modal-content">
                           <div class="modal-header">
                                <span class="close" onclick="closePreview()">&times</span>
                                <h2 id="ModalHeader">Modal Header</h2>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                 <img id="ModalImage" src="assets/images/portfolio1.jpg" alt="portfolio image">
-                            </div>
-                            <!--<iframe id="ModalVideo" width="560" height="315" src="https://www.youtube.com/embed/UsKU4cPQtnk" frameborder="0" allowfullscreen></iframe> -->
+                             <div class="slideshow-container">
+                               <div class="slides">
+                                     <img id="ModalImage1" src="assets/images/portfolio1.jpg" alt="portfolio image" style="width:25%">
+                                     <p class="slides-text">Hello World!</p>
+                               </div>
+                               <div class="slides">
+                                     <img id="ModalImage2" src="assets/images/portfolio2.jpg" alt="portfolio image" style="width:25%">
+                                     <p class="slides-text">Hello World 2!</p>
+                               </div>
+                               <div class="slides">
+                                    <div id="ModalVideo"></div>
+                               </div>
+                               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                             </div>
+                             <br>
+                             <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(0)"></span>
+                                  <span class="dot" onclick="currentSlide(1)"></span>
+                                  <span class="dot" onclick="currentSlide(2)"></span>
+                             </div>
                              <p id="ModalParagraph" class="modal-body-text">Hello World!</p>
                         </div>
                         <div class="modal-footer">
@@ -186,7 +201,6 @@
         </section><!-- portfolio -->
 
         <!-- Contact Area -->
-
         <section id="contact">
             <div id="contact-area">
                 <div class="container">
@@ -211,7 +225,6 @@
         </section><!-- contact -->
 
         <!-- Footer Area -->
-
         <footer>
             <div class="container">
                 <div class="row">
