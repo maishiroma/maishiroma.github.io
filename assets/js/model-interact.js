@@ -1,6 +1,9 @@
-// Script Variables
+// General Variables
 var slideIndex = 0;
-var player;
+var YTPlayer;
+
+// Specific Elements in the webpage found at the start
+var body = document.getElementById("body");
 var modelSlides = document.getElementsByClassName("slides");
 var modelDots = document.getElementsByClassName("dot");
 var modal = document.getElementById("Modal");
@@ -9,20 +12,18 @@ var modalParagraph = document.getElementById("ModalParagraph");
 var modalImage1 = document.getElementById("ModalImage1");
 var modalImage2 = document.getElementById("ModalImage2");
 var modalVideo = document.getElementById("ModalVideo");
-var body = document.getElementById("body");
 
+// Run at the start so that the YouTube API can load async
 var scriptElement = document.createElement("script");
 scriptElement.src = "https://www.youtube.com/iframe_api";
 var firstScriptElement = document.getElementsByTagName("script")[0];
 firstScriptElement.parentNode.insertBefore(scriptElement,firstScriptElement);
 
+// Called automatically when the video player is ready to be played
 function onYouTubeIframeAPIReady()
 {
-	player = new YT.Player('ModalVideo',
+	YTPlayer = new YT.Player('ModalVideo',
 		{
-			height: "315",
-          	width: "560",
-			videoID: "UsKU4cPQtnk",
 			events:
 			{
 			    "onReady":onPlayerReady,
@@ -33,24 +34,18 @@ function onYouTubeIframeAPIReady()
   	);
 }
 
+// Functions called when the events specified in the video are fired
 function onPlayerReady(event)
 {
-	console.log("Hi");
+	console.log("Video Ready!");
 }
-
 function onPlayerStateChange(event)
 {
-	console.log("Sup");
+	console.log("Video Event Change: " + event.data);
 }
-
 function onPlayerError(event)
 {
-	console.log("Woah");
-}
-
-function pauseVideo()
-{
-	player.pauseVideo();
+	console.log("Video Error!");
 }
 
 // Next/Prev controls
@@ -88,8 +83,16 @@ function showSlides(index)
 		modelDots[currentIndex].className = modelDots[currentIndex].className.replace(" active", "");
 	}
 
-	modelSlides[slideIndex].style.display = "block";
-  	modelDots[slideIndex].className += " active";
+	// This allows for the video image to update its preview
+	if(slideIndex == 2)
+	{
+		setTimeout(delayToShow(),500);
+	}
+	else
+	{
+		modelSlides[slideIndex].style.display = "block";
+	}
+	modelDots[slideIndex].className += " active";
 }
 
 // Displays the model to the screen once the user clicks on the button
@@ -104,6 +107,16 @@ function expandPreview(idOfPreview)
 		case "firstButton":
 			message = "What's Up?";
 			header = "First Modal";
+			modalImage1.src = "assets/images/portfolio1.jpg";
+			modalImage2.src = "assets/images/portfolio2.jpg";
+			modalVideo.src = "https://www.youtube.com/embed/UsKU4cPQtnk?enablejsapi=1";
+			break;
+		case "secondButton":
+			message = "HeyHeyHey!";
+			header = "Second Modal";
+			modalImage1.src = "assets/images/portfolio3.jpg";
+			modalImage2.src = "assets/images/portfolio4.jpg";
+			modalVideo.src = "https://www.youtube.com/embed/5KCq2qqO03A?enablejsapi=1"
 			break;
 		default:
 			message = "Default message";
@@ -119,11 +132,23 @@ function expandPreview(idOfPreview)
 	showSlides(slideIndex);
 }
 
+// Called in a Timeout. Throttles showing the video itself, so that the video can update its preview
+function delayToShow()
+{
+	return function()
+	{
+		modelSlides[slideIndex].style.display = "block";
+	}
+}
+
 // When the user clicks on <span> (x), close the modal
 function closePreview()
 {
 	modal.style.display = "none";
 	body.style.overflow = "auto";
+
+	YTPlayer.stopVideo();
+	slideIndex = 0;
 }
 
 // When the user clicks anywhere outside of the modal, close it

@@ -112,7 +112,7 @@
                             <figcaption>
                                 <h3>Camera</h3>
                                 <span>Jacob Cummings</span>
-                                <a href="#" class="button" >Take a look</a>
+                                <button id="secondButton" class="button" onclick="expandPreview('secondButton')">Take a look</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div id="Modal" class="modal" onload="LoadYouTubeIframeAPI()">
+                <div id="Modal" class="modal">
                      <div class="modal-content">
                           <div class="modal-header">
                                <span class="close" onclick="closePreview()">&times</span>
@@ -178,8 +178,8 @@
                                      <p class="slides-text">Hello World 2!</p>
                                </div>
                                <div class="slides">
-                                    <div id="ModalVideo"></div>
-                               </div>
+                                   <iframe id="ModalVideo" width="560" height="315" src="https://www.youtube.com/embed/UsKU4cPQtnk?enablejsapi=1" frameborder="0"></iframe>
+                              </div>
                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                              </div>
