@@ -403,7 +403,7 @@ header{
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: hidden;
+    overflow-y: scroll;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
@@ -551,6 +551,11 @@ header{
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.videoModal{
+     width: 50%;
+     height: 100%;
 }
 
 /* /////////////////////////////////////////////////////////////////////
@@ -711,6 +716,9 @@ header{
 }
 .github{
      background-image: url(../images/GitHubIcon.png);
+}
+.dropbox{
+     background-image: url(../images/DropBoxIcon.png);
 }
 
 
