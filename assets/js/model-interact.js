@@ -1,5 +1,6 @@
 // General Variables
 var slideIndex = 0;
+var loadedVideo = false;
 var YTPlayer;
 
 // Specific Elements in the webpage found at the start
@@ -12,6 +13,7 @@ var modalParagraph = document.getElementById("ModalParagraph");
 var modalImage1 = document.getElementById("ModalImage1");
 var modalImage2 = document.getElementById("ModalImage2");
 var modalVideo = document.getElementById("ModalVideo");
+var modalVideoLoad = document.getElementById("ModalVideoLoad");
 
 // Run at the start so that the YouTube API can load async
 var scriptElement = document.createElement("script");
@@ -84,14 +86,11 @@ function showSlides(index)
 	}
 
 	// This allows for the video image to update its preview
-	if(slideIndex == 2)
+	if(slideIndex == 2 && loadedVideo == false)
 	{
-		setTimeout(delayToShow(),500);
+		setTimeout(delayToShow(),1000);
 	}
-	else
-	{
-		modelSlides[slideIndex].style.display = "block";
-	}
+	modelSlides[slideIndex].style.display = "block";
 	modelDots[slideIndex].className += " active";
 }
 
@@ -137,7 +136,9 @@ function delayToShow()
 {
 	return function()
 	{
-		modelSlides[slideIndex].style.display = "block";
+		modalVideoLoad.style.display = "none";
+		modalVideo.style.display = "inline";
+		loadedVideo = true;
 	}
 }
 
@@ -146,9 +147,12 @@ function closePreview()
 {
 	modal.style.display = "none";
 	body.style.overflow = "auto";
+	modalVideoLoad.style.display = "inline";
+	modalVideo.style.display = "none";
 
 	YTPlayer.stopVideo();
 	slideIndex = 0;
+	loadedVideo = false;
 }
 
 // When the user clicks anywhere outside of the modal, close it
