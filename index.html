@@ -78,6 +78,7 @@
 
                <div class="service-bio">
                     <img class="service-pic" src="assets/images/profile_pic.jpg" alt="My pic" width="200" height="200">
+                    <p>
                     Hello! I recently graduated from Chapman University majoring in Computer Science
                     and minoring in Game Development and Programming. I am involved in numerous projects
                     both in and out of the classroom, ranging from one off game jams to viable submissions
@@ -86,6 +87,7 @@
                     I strive to learn new knowledge that will help me in future programming endeavors or
                     offer assistance in outside projects. During my free time, I catch up on my exponential
                     list of games, network with people of similar interests, and play the Japanese Taiko drums.
+                    </p>
                <div>
             </div>
         </section><!-- services -->
@@ -174,11 +176,9 @@
                              <div class="slideshow-container">
                                <div class="slides">
                                      <img id="ModalImage1" class="slidesImage" src="assets/images/portfolio1.jpg" alt="portfolio image">
-                                     <p class="slides-text">Hello World!</p>
                                </div>
                                <div class="slides">
                                      <img id="ModalImage2" src="assets/images/portfolio2.jpg" alt="portfolio image">
-                                     <p class="slides-text">Hello World 2!</p>
                                </div>
                                <div class="slides">
                                    <img id="ModalVideoLoad" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading Video...">
@@ -204,16 +204,16 @@
                 <div id="AllModal" class="modal">
                      <div class="modal-content">
                           <div class="modal-header">
-                               <span class="close" onclick="closeAllPreview()">&times</span>
+                               <span class="close" onclick="closePreview()">&times</span>
                                <h2 id="ModalHeader">Modal Header</h2>
                         </div>
                         <div class="modal-body">
                             <div id="filerButtons">
-                                <button class="btn_All active" onclick="filterSelection('all')"> Show All</button>
-                                <button class="btn_All" onclick="filterSelection('games')"> Games</button>
-                                <button class="btn_All" onclick="filterSelection('applications')"> Applications</button>
-                                <button class="btn_All" onclick="filterSelection('internships')"> Internships</button>
-                                <button class="btn_All" onclick="filterSelection('jobs')"> Jobs</button>
+                                <button class="btn_All active" onclick="filterSelection(this,'all')"> Show All</button>
+                                <button class="btn_All" onclick="filterSelection(this,'games')"> Games</button>
+                                <button class="btn_All" onclick="filterSelection(this,'applications')"> Applications</button>
+                                <button class="btn_All" onclick="filterSelection(this,'internships')"> Internships</button>
+                                <button class="btn_All" onclick="filterSelection(this,'jobs')"> Jobs</button>
                             </div>
                             <div class="row_allBtn">
                                  <div class="column games">

@@ -24,7 +24,7 @@ var modalReturn = document.getElementById("returnIcon");
 var allModal = document.getElementById("AllModal");
 var modalColumns = document.getElementsByClassName("column")
 var modalButtons = document.getElementsByClassName("btn_All");
-var activeElements = document.getElementsByClassName("btn_All active");
+var selectedFilterElement;
 
 // CODE RUN AT COMPILE
 // Runs at the start so that the YouTube API can load async
@@ -35,19 +35,65 @@ firstScriptElement.parentNode.insertBefore(scriptElement,firstScriptElement);
 
 
 
-// Universal FUNCTIONS
+// Shared functions
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    	if (event.target == modal)
+window.onclick = function(event)
+{
+    	if (event.target == modal || event.target == allModal)
 	{
         	closePreview();
     	}
-	else if(event.target == allModal)
+}
+
+// This adds the given class to the current element
+function addClass(element, name)
+{
+	var elementArray = element.className.split(" ");
+	var nameArray = name.split(" ");
+	for (var currentIndex = 0; currentIndex < nameArray.length; currentIndex++)
 	{
-		closeAllPreview();
+		if (elementArray.indexOf(nameArray[currentIndex]) == -1)
+		{
+ 			element.className += " " + nameArray[currentIndex];
+		}
 	}
 }
 
+// Removes the specified class from the given element
+function removeClass(element, name)
+{
+	var elementArray = element.className.split(" ");
+	var nameArray = name.split(" ");
+	for (var currentIndex = 0; currentIndex < nameArray.length; currentIndex++)
+	{
+		while (elementArray.indexOf(nameArray[currentIndex]) > -1)
+		{
+			elementArray.splice(elementArray.indexOf(nameArray[currentIndex]), 1);
+		}
+	}
+	element.className = elementArray.join(" ");
+}
+
+// Called when clicking on the navigation header, clicking outside of the window, or clicking on the span.
+// Closes the modal window
+function closePreview()
+{
+     if(inBigModal == true)
+     {
+          removeClass(selectedFilterElement, " active");
+          modalReturn.style.display = "none";
+     	allModal.style.display = "none";
+     	inBigModal = false;
+     }
+
+     modal.style.display = "none";
+     modalVideoLoad.style.display = "inline";
+     modalVideo.style.display = "none";
+     YTPlayer.stopVideo();
+     slideIndex = 0;
+     loadedVideo = false;
+     body.style.overflow = "auto";
+}
 
 
 // Modal Functions
@@ -88,25 +134,6 @@ function expandPreview(idOfPreview)
 	showSlides(slideIndex);
 }
 
-// When the user clicks on <span> (x), close the modal
-function closePreview()
-{
-     if(inBigModal == true)
-     {
-          returnIcon.style.display = "none";
-          inBigModal = false;
-     }
-
-	modal.style.display = "none";
-	body.style.overflow = "auto";
-	modalVideoLoad.style.display = "inline";
-	modalVideo.style.display = "none";
-
-	YTPlayer.stopVideo();
-	slideIndex = 0;
-	loadedVideo = false;
-}
-
 // Called in a Timeout. Throttles showing the video itself, so that the video can update its preview
 function delayToShow()
 {
@@ -130,7 +157,6 @@ function returnToAllModal()
 }
 
 
-
 // Slides FUNCTIONS
 // Shows the slideshow
 function showSlides(index)
@@ -150,7 +176,7 @@ function showSlides(index)
 	}
 	for(var currentIndex = 0; currentIndex < modalDots.length; currentIndex++)
 	{
-		modalDots[currentIndex].className = modalDots[currentIndex].className.replace(" active", "");
+          removeClass(modalDots[currentIndex], " active");
 	}
 
 	// This allows for the video image to update its preview
@@ -159,7 +185,7 @@ function showSlides(index)
 		setTimeout(delayToShow(),1000);
 	}
 	modalSlides[slideIndex].style.display = "block";
-	modalDots[slideIndex].className += " active";
+     addClass(modalDots[slideIndex], " active");
 }
 
 // Next/Prev controls for the slides
@@ -175,7 +201,6 @@ function currentSlide(newIndex)
 	slideIndex = newIndex;
 	showSlides(slideIndex);
 }
-
 
 
 // Video functions
@@ -217,78 +242,38 @@ function expandAllPreview()
 	body.style.overflow = "hidden";
 	allModal.style.display = "block";
 	inBigModal = true;
-	filterSelection('all');
-}
 
-// When the user clicks on <span> (x), close the all modal
-function closeAllPreview()
-{
-	allModal.style.display = "none";
-	body.style.overflow = "auto";
-	inBigModal = false;
+     // By defaut, all of the items will be showing
+     selectedFilterElement = modalButtons[0];
+     filterSelection(selectedFilterElement, "all");
 }
 
 // Filters out the selection to only be what is shown
-function filterSelection(criteria)
+function filterSelection(element, criteria)
 {
 	// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
 	for (var currentIndex = 0; currentIndex < modalColumns.length; currentIndex++)
 	{
-		if(criteria == "all")
-		{
-			addClass(modalColumns[currentIndex], "show");
-		}
-		else
-		{
-			if(modalColumns[currentIndex].className.indexOf(criteria) <= -1)
-			{
-				removeClass(modalColumns[currentIndex], "show");
-			}
-			else
-			{
-				addClass(modalColumns[currentIndex], "show");
-			}
-		}
-	}
+          if(criteria == "all")
+          {
+               addClass(modalColumns[currentIndex], "show");
+          }
+          else
+          {
+               if(modalColumns[currentIndex].className.indexOf(criteria) <= -1)
+               {
+                    removeClass(modalColumns[currentIndex], "show");
+               }
+               else
+               {
+                    addClass(modalColumns[currentIndex], "show");
+               }
+          }
 
-	// Add active class to the current button (highlight it)
-	for (var currentIndex = 0; currentIndex < modalButtons.length; currentIndex++)
-	{
-		modalButtons[currentIndex].addEventListener("click", function(){
-			activeElements[0].className = activeElements[0].className.replace(" active", "");
-			this.className += " active";
-			}
-		);
 	}
-}
-
-// This adds the given class to the current element
-function addClass(element, name)
-{
-	var elementArray = element.className.split(" ");
-	var nameArray = name.split(" ");
-	for (var currentIndex = 0; currentIndex < nameArray.length; currentIndex++)
-	{
-		if (elementArray.indexOf(nameArray[currentIndex]) == -1)
-		{
- 			element.className += " " + nameArray[currentIndex];
-		}
-	}
-}
-
-// Removes the specified class from the given element
-function removeClass(element, name)
-{
-	var elementArray = element.className.split(" ");
-	var nameArray = name.split(" ");
-	for (var currentIndex = 0; currentIndex < nameArray.length; currentIndex++)
-	{
-		while (elementArray.indexOf(nameArray[currentIndex]) > -1)
-		{
-			elementArray.splice(elementArray.indexOf(nameArray[currentIndex]), 1);
-		}
-	}
-	element.className = elementArray.join(" ");
+     removeClass(selectedFilterElement, " active");
+     addClass(element, " active");
+     selectedFilterElement = element;
 }
 
 // In the All Preview, clicking on one of the items will open up a more detailed version of it.
