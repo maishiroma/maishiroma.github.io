@@ -88,7 +88,19 @@ a:hover,a:active,a:focus{
     left: 0.5em;
     margin-right: -42%;
 }
-
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+.noselect {
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 
 /* /////////////////////////////////////////////////////////////////////
 //  02 - Header
@@ -405,7 +417,6 @@ header{
     left: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow-y: scroll;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
@@ -426,7 +437,7 @@ header{
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -434,10 +445,27 @@ header{
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Return to selection IF APPLICABLE   */
+.return {
+    color: black;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.return:hover,
+.return:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* Modal Header */
 .modal-header {
@@ -451,6 +479,9 @@ header{
 .modal-body {
      padding: 10px 10px;
      text-align: center;
+     max-height: calc(100vh - 220px);
+     overflow-y: auto;
+     overflow-x: hidden;
 }
 
 .modal-body-text
@@ -495,7 +526,7 @@ header{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -568,6 +599,83 @@ header{
 
 .videoModalLoad {
      display: inline;
+}
+
+/*   Specific classes for the All Modal */
+.row_allBtn{
+     margin: 10px -16px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row_allBtn,
+.row_allBtn > .column {
+    padding: 8px;
+}
+
+/* Clear floats after rows */
+.row_allBtn:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    flex: 0.1;
+    display: none; /* Hide columns by default */
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn_All {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn_All:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn_All.active {
+  background-color: #666;
+   color: white;
+}
+
+/*   Property of all images in the all modal   */
+.allModalImage {
+     width: 100%;
+     cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
 
 /* /////////////////////////////////////////////////////////////////////
