@@ -1,4 +1,4 @@
-/*
+images/icons/*
 Theme Name: Dark Joe
 Theme URI: http://themewagon.com/demo/DarkJoe/
 Author: ThemeWagon
@@ -107,7 +107,7 @@ a:hover,a:active,a:focus{
 /////////////////////////////////////////////////////////////////////*/
 
 header{
-	background: url(../images/bg.jpg) no-repeat;
+	background: url(../images/bg/bg-black.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 50% -50px;
@@ -826,25 +826,25 @@ header{
     background-position: 0px -50px;
 }
 .facebook{
-	background-image: url(../images/facebook.png);
+	background-image: url(../images/icons/facebook.png);
 }
 .twitter{
-	background-image: url(../images/twitter.png);
+	background-image: url(../images/icons/twitter.png);
 }
 .google-plus{
-	background-image: url(../images/google-plus.png);
+	background-image: url(../images/icons/google-plus.png);
 }
 .linkedin{
-	background-image: url(../images/linkedin.png);
+	background-image: url(../images/icons/linkedin.png);
 }
 .wordpress{
-	background-image: url(../images/wordpress.png);
+	background-image: url(../images/icons/wordpress.png);
 }
 .github{
-     background-image: url(../images/GitHubIcon.png);
+     background-image: url(../images/icons/GitHubIcon.png);
 }
 .dropbox{
-     background-image: url(../images/DropBoxIcon.png);
+     background-image: url(../images/icons/DropBoxIcon.png);
 }
 
 
