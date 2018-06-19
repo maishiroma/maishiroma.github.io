@@ -173,7 +173,7 @@ function expandPreview(idOfPreview)
                header = "Top Shelf Gaming Internship";
                modalImage1.src = "assets/images/portfolio/TSG1.png";
                modalImage2.src = "assets/images/portfolio/TSG2.png";
-               modalVideoImage.src = "assets/images/portfolio/TSG5.jpeg";
+               modalVideoImage.src = "assets/images/portfolio/TSG4.jpeg";
                hasVideo = false;
                break;
 		case "ROC":
@@ -206,9 +206,9 @@ function expandPreview(idOfPreview)
 		default:
 			message = "OH NO";
 			header = "Woah!";
-               modalImage1.src = "assets/images/portfolio/Custom404.png";
-               modalImage2.src = "assets/images/portfolio/Custom404.png";
-               modalVideoImage.src = "assets/images/portfolio/404GIF.gif";
+               modalImage1.src = "assets/images/Custom404.png";
+               modalImage2.src = "assets/images/Custom404.png";
+               modalVideoImage.src = "assets/images/404GIF.gif";
                hasVideo = false;
 	}
 
