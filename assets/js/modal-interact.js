@@ -3,6 +3,8 @@
 var slideIndex = 0;
 var loadedVideo = false;
 var inBigModal = false;
+var hasVideo = true;
+var onMobile = isMobileDevice();
 var YTPlayer;
 
 // Elements that are found universal
@@ -15,23 +17,30 @@ var modalParagraph = document.getElementById("ModalParagraph");
 var modalImage1 = document.getElementById("ModalImage1");
 var modalImage2 = document.getElementById("ModalImage2");
 var modalVideo = document.getElementById("ModalVideo");
-var modalVideoLoad = document.getElementById("ModalVideoLoad");
+var modalVideoImage = document.getElementById("modalVideoImage");
 var modalSlides = document.getElementsByClassName("slides");
 var modalDots = document.getElementsByClassName("dot");
 var modalReturn = document.getElementById("returnIcon");
 
 // Specific elements in the All Modal
 var allModal = document.getElementById("AllModal");
-var modalColumns = document.getElementsByClassName("column")
-var modalButtons = document.getElementsByClassName("btn_All");
+var allModalColumns = document.getElementsByClassName("column")
+var allModalButtons = document.getElementsByClassName("btn_All");
+var allModalHeader = document.getElementById("AllModalHeader");
 var selectedFilterElement;
 
-// CODE RUN AT COMPILE
+// RUN AT START!
 // Runs at the start so that the YouTube API can load async
 var scriptElement = document.createElement("script");
 scriptElement.src = "https://www.youtube.com/iframe_api";
 var firstScriptElement = document.getElementsByTagName("script")[0];
 firstScriptElement.parentNode.insertBefore(scriptElement,firstScriptElement);
+
+// If the device is on mobile, we need to change how the all modal is displayed.
+if(onMobile == true)
+{
+     document.getElementById("allModalContent").style.display = "block";
+}
 
 
 
@@ -87,13 +96,19 @@ function closePreview()
      }
 
      modal.style.display = "none";
-     modalVideoLoad.style.display = "inline";
+     modalVideoImage.style.display = "inline";
      modalVideo.style.display = "none";
      YTPlayer.stopVideo();
      slideIndex = 0;
      loadedVideo = false;
      body.style.overflow = "auto";
 }
+
+// Checks if user is on mobile device.
+function isMobileDevice()
+{
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 
 // Modal Functions
@@ -106,23 +121,40 @@ function expandPreview(idOfPreview)
 	// Depending on the id that we pass in, we change what is currently being displayed
 	switch(idOfPreview)
 	{
-		case "firstButton":
+		case "ROC":
 			message = "What's Up?";
 			header = "First Modal";
 			modalImage1.src = "assets/images/portfolio1.jpg";
 			modalImage2.src = "assets/images/portfolio2.jpg";
-			modalVideo.src = "https://www.youtube.com/embed/UsKU4cPQtnk?enablejsapi=1";
+               modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
+			modalVideo.src = "https://www.youtube.com/embed/-2hI197w3ao?enablejsapi=1&rel=0";
+               hasVideo = true;
 			break;
-		case "secondButton":
+		case "Astrae":
 			message = "HeyHeyHey!";
 			header = "Second Modal";
 			modalImage1.src = "assets/images/portfolio3.jpg";
 			modalImage2.src = "assets/images/portfolio4.jpg";
-			modalVideo.src = "https://www.youtube.com/embed/5KCq2qqO03A?enablejsapi=1"
+               modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
+			modalVideo.src = "https://www.youtube.com/embed/UsKU4cPQtnk?enablejsapi=1&rel=0"
+               hasVideo = true;
 			break;
+          case "BSEC":
+               message = "HeyHeyHey!";
+               header = "Second Modal";
+               modalImage1.src = "assets/images/portfolio3.jpg";
+               modalImage2.src = "assets/images/portfolio4.jpg";
+               modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
+               modalVideo.src = "https://www.youtube.com/embed/5KCq2qqO03A?enablejsapi=1&rel=0";
+               hasVideo = true;
+               break;
 		default:
-			message = "Default message";
-			header = "Default Header"
+			message = "Under Construction";
+			header = "OH NO";
+               modalImage1.src = "assets/images/portfolio/Custom404.png";
+               modalImage2.src = "assets/images/portfolio/Custom404.png";
+               modalVideoImage.src = "assets/images/portfolio/404GIF.gif";
+               hasVideo = false;
 	}
 
 	// We prevent the BG page from scrolling and we show the modal to the screen
@@ -139,7 +171,7 @@ function delayToShow()
 {
 	return function()
 	{
-		modalVideoLoad.style.display = "none";
+		modalVideoImage.style.display = "none";
 		modalVideo.style.display = "inline";
 		loadedVideo = true;
 	}
@@ -180,10 +212,13 @@ function showSlides(index)
 	}
 
 	// This allows for the video image to update its preview
-	if(slideIndex == 2 && loadedVideo == false)
-	{
-		setTimeout(delayToShow(),1000);
-	}
+     if(hasVideo == true)
+     {
+          if(slideIndex == 2 && loadedVideo == false)
+     	{
+     		setTimeout(delayToShow(),1000);
+     	}
+     }
 	modalSlides[slideIndex].style.display = "block";
      addClass(modalDots[slideIndex], " active");
 }
@@ -244,7 +279,7 @@ function expandAllPreview()
 	inBigModal = true;
 
      // By defaut, all of the items will be showing
-     selectedFilterElement = modalButtons[0];
+     selectedFilterElement = allModalButtons[0];
      filterSelection(selectedFilterElement, "all");
 }
 
@@ -252,25 +287,45 @@ function expandAllPreview()
 function filterSelection(element, criteria)
 {
 	// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-	for (var currentIndex = 0; currentIndex < modalColumns.length; currentIndex++)
+	for (var currentIndex = 0; currentIndex < allModalColumns.length; currentIndex++)
 	{
           if(criteria == "all")
           {
-               addClass(modalColumns[currentIndex], "show");
+               addClass(allModalColumns[currentIndex], "show");
           }
           else
           {
-               if(modalColumns[currentIndex].className.indexOf(criteria) <= -1)
+               if(allModalColumns[currentIndex].className.indexOf(criteria) <= -1)
                {
-                    removeClass(modalColumns[currentIndex], "show");
+                    removeClass(allModalColumns[currentIndex], "show");
                }
                else
                {
-                    addClass(modalColumns[currentIndex], "show");
+                    addClass(allModalColumns[currentIndex], "show");
                }
           }
 
 	}
+
+     switch(criteria)
+     {
+          case "games":
+               allModalHeader.innerHTML = "All Games";
+               break;
+          case "internships":
+               allModalHeader.innerHTML = "All Internships";
+               break;
+          case "applications":
+               allModalHeader.innerHTML = "All Applications";
+               break;
+          case "jobs":
+               allModalHeader.innerHTML = "All Jobs";
+               break;
+          default:
+               allModalHeader.innerHTML = "All Items";
+     }
+
+
      removeClass(selectedFilterElement, " active");
      addClass(element, " active");
      selectedFilterElement = element;
