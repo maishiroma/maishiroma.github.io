@@ -107,7 +107,7 @@ a:hover,a:active,a:focus{
 /////////////////////////////////////////////////////////////////////*/
 
 header{
-	background: url(../images/bg/bg-black.jpg) no-repeat;
+	background: url(../images/bg/bg-normal.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 50% -50px;
@@ -697,7 +697,7 @@ header{
 /////////////////////////////////////////////////////////////////////*/
 
 #testimonial {
-    background: url(../images/parallax.jpg);
+    background: url(../images/bg/bg-parallax.jpg);
     padding: 80px 0px 80px 0px;
     color: #fff;
     background-attachment: fixed;
@@ -746,7 +746,7 @@ header{
     height: 100%;
 }
 #contact-area {
-    background: rgba(0, 0, 0, 0.7);
+     background: url(../images/bg/bg-parallax.jpg);
     width: 100%;
     position: relative;
 }
@@ -941,7 +941,7 @@ footer {
 @media all and (max-width: 991px) {
 
 	header{
-		background: url(../images/bg-small.jpg) no-repeat;
+		background: url(../images/bg/bg-normal.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: 50% -50px;
