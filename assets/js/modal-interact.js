@@ -94,7 +94,6 @@ function closePreview()
      	allModal.style.display = "none";
      	inBigModal = false;
      }
-
      modal.style.display = "none";
      modalVideoImage.style.display = "inline";
      modalVideo.style.display = "none";
@@ -121,36 +120,92 @@ function expandPreview(idOfPreview)
 	// Depending on the id that we pass in, we change what is currently being displayed
 	switch(idOfPreview)
 	{
+          case "Android":
+               message = "Under Construction";
+               header = "Character Picker App";
+               modalImage1.src = "assets/images/portfolio/Android1.png";
+               modalImage2.src = "assets/images/portfolio/Android2.png";
+               modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
+               hasVideo = false;
+               break;
+          case "Chat":
+               message = "Under Construction";
+               header = "Online Chat Application";
+               modalImage1.src = "assets/images/portfolio/Chat3.png";
+               modalImage2.src = "assets/images/portfolio/Chat1.png";
+               modalVideoImage.src = "assets/images/portfolio/Chat2.png";
+               hasVideo = false;
+               break;
+          case "Drumpf":
+               message = "Under Construction";
+               header = "Sentiment Twitter Analysis Program";
+               modalImage1.src = "assets/images/portfolio/Drumpf3.png";
+               modalImage2.src = "assets/images/portfolio/Drumpf1.png";
+               modalVideoImage.src = "assets/images/portfolio/Drumpf2.png";
+               hasVideo = false;
+               break;
+          case "ISD":
+               message = "Under Construction";
+               header = "In Solo Duo";
+               modalImage1.src = "assets/images/portfolio/ISD1.png";
+               modalImage2.src = "assets/images/portfolio/ISD2.png";
+               modalVideoImage.src = "assets/images/portfolio/ISD3.png";
+               hasVideo = false;
+               break;
+          case "QMerit":
+               message = "Under Construction";
+               header = "QMerit Internship";
+               modalImage1.src = "assets/images/portfolio/Qmerit1.jpg";
+               modalImage2.src = "assets/images/portfolio/Qmerit2.jpg";
+               modalVideoImage.src = "assets/images/portfolio/Qmerit3.png";
+               hasVideo = false;
+               break;
+          case "Reflections":
+               message = "Under Construction";
+               header = "Reflections";
+               modalImage1.src = "assets/images/portfolio/Reflections3.png";
+               modalImage2.src = "assets/images/portfolio/Reflections2.png";
+               modalVideoImage.src = "assets/images/portfolio/Reflections1.png";
+               hasVideo = false;
+               break;
+          case "TSG":
+               message = "Under Construction";
+               header = "Top Shelf Gaming Internship";
+               modalImage1.src = "assets/images/portfolio/TSG1.png";
+               modalImage2.src = "assets/images/portfolio/TSG2.png";
+               modalVideoImage.src = "assets/images/portfolio/TSG5.jpeg";
+               hasVideo = false;
+               break;
 		case "ROC":
-			message = "What's Up?";
-			header = "First Modal";
-			modalImage1.src = "assets/images/portfolio1.jpg";
-			modalImage2.src = "assets/images/portfolio2.jpg";
+			message = "Under Construction";
+			header = "Arvada Labs Internship";
+			modalImage1.src = "assets/images/portfolio/ROC1.png";
+			modalImage2.src = "assets/images/portfolio/ROC2.png";
                modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
 			modalVideo.src = "https://www.youtube.com/embed/-2hI197w3ao?enablejsapi=1&rel=0";
                hasVideo = true;
 			break;
 		case "Astrae":
-			message = "HeyHeyHey!";
-			header = "Second Modal";
-			modalImage1.src = "assets/images/portfolio3.jpg";
-			modalImage2.src = "assets/images/portfolio4.jpg";
+			message = "Under Construction";
+			header = "Astrae";
+			modalImage1.src = "assets/images/portfolio/Astrae1.png";
+			modalImage2.src = "assets/images/portfolio/Astrae2.png";
                modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
 			modalVideo.src = "https://www.youtube.com/embed/UsKU4cPQtnk?enablejsapi=1&rel=0"
                hasVideo = true;
 			break;
           case "BSEC":
-               message = "HeyHeyHey!";
-               header = "Second Modal";
-               modalImage1.src = "assets/images/portfolio3.jpg";
-               modalImage2.src = "assets/images/portfolio4.jpg";
+               message = "Under Construction";
+               header = "Beyond Space Energy Corp";
+               modalImage1.src = "assets/images/portfolio/BSEC1.png";
+               modalImage2.src = "assets/images/portfolio/BSEC3.png";
                modalVideoImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
                modalVideo.src = "https://www.youtube.com/embed/5KCq2qqO03A?enablejsapi=1&rel=0";
                hasVideo = true;
                break;
 		default:
-			message = "Under Construction";
-			header = "OH NO";
+			message = "OH NO";
+			header = "Woah!";
                modalImage1.src = "assets/images/portfolio/Custom404.png";
                modalImage2.src = "assets/images/portfolio/Custom404.png";
                modalVideoImage.src = "assets/images/portfolio/404GIF.gif";
@@ -183,6 +238,8 @@ function returnToAllModal()
 {
      modal.style.display = "none";
      allModal.style.display = "block";
+     modalVideo.style.display = "none";
+     modalVideoImage.style.display = "inline";
      YTPlayer.stopVideo();
 	slideIndex = 0;
 	loadedVideo = false;
@@ -206,7 +263,7 @@ function showSlides(index)
 	{
 		modalSlides[currentIndex].style.display = "none";
 	}
-	for(var currentIndex = 0; currentIndex < modalDots.length; currentIndex++)
+	for(var currentIndex = 0; currentIndex < modalSlides.length; currentIndex++)
 	{
           removeClass(modalDots[currentIndex], " active");
 	}
@@ -216,7 +273,7 @@ function showSlides(index)
      {
           if(slideIndex == 2 && loadedVideo == false)
      	{
-     		setTimeout(delayToShow(),1000);
+     		setTimeout(delayToShow(),1500);
      	}
      }
 	modalSlides[slideIndex].style.display = "block";
