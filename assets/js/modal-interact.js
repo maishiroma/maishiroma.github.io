@@ -203,6 +203,30 @@ function expandPreview(idOfPreview)
                modalVideo.src = "https://www.youtube.com/embed/5KCq2qqO03A?enablejsapi=1&rel=0";
                hasVideo = true;
                break;
+          case "Catapult":
+               message = "Under Construction";
+               header = "Steam Punk Catapult Modal";
+               modalImage1.src = "assets/images/portfolio/modals/Catapult2.jpg";
+               modalImage2.src = "assets/images/portfolio/modals/Catapult3.jpg";
+               modalVideoImage.src = "assets/images/portfolio/modals/Catapult4.jpg";
+               hasVideo = false;
+               break;
+          case "LowPoly":
+               message = "Under Construction";
+               header = "Low Poly Art for BSEC";
+               modalImage1.src = "assets/images/portfolio/modals/Flowers.jpg";
+               modalImage2.src = "assets/images/portfolio/modals/Mushroom.jpg";
+               modalVideoImage.src = "assets/images/portfolio/modals/Tree.jpg";
+               hasVideo = false;
+               break;
+          case "Odyssey":
+               message = "Under Construction";
+               header = "The Odyssey from Super Mario Odyseey";
+               modalImage1.src = "assets/images/portfolio/modals/Odyssey2.jpg";
+               modalImage2.src = "assets/images/portfolio/modals/Odyssey3.jpg";
+               modalVideoImage.src = "assets/images/portfolio/modals/Odyssey4.jpg";
+               hasVideo = false;
+               break;
 		default:
 			message = "OH NO";
 			header = "Woah!";
@@ -377,6 +401,9 @@ function filterSelection(element, criteria)
                break;
           case "jobs":
                allModalHeader.innerHTML = "All Jobs";
+               break;
+          case "modals":
+               allModalHeader.innerHTML = "All Modals";
                break;
           default:
                allModalHeader.innerHTML = "All Items";
