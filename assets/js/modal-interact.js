@@ -448,7 +448,7 @@ function expandPreview(idOfPreview)
                message = "<p class='modal-body-text'>OH NO</p>";
                modalImage1.src = "assets/images/Custom404.png";
                modalImage2.src = "assets/images/Custom404.png";
-               modalVideoImage.src = "assets/images/404GIF.gif";
+               modalVideoImage.src = "assets/images/404Gif.gif";
                hasVideo = false;
                error = true;
 	}
