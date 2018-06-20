@@ -645,7 +645,7 @@ header{
 /*   Property of all images in the all modal   */
 .allModalImage {
      width: 100%;
-     height: 30vh;
+     height: 20vh;
      cursor: pointer;
 }
 
