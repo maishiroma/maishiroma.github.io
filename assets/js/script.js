@@ -131,11 +131,11 @@ var origOffsetY = menu.offset().top;
 function scroll() {
    if ($(window).scrollTop() >= origOffsetY) {
        $('#navigation').addClass('nav-wrap');
-       $('#services').addClass('exp');
+       $('#AboutMe').addClass('exp');
        //$('.content').addClass('menu-padding');
    } else {
        $('#navigation').removeClass('nav-wrap');
-       $('#services').removeClass('exp');
+       $('#AboutMe').removeClass('exp');
        //$('.content').removeClass('menu-padding');
    }
 
@@ -161,24 +161,3 @@ function scroll() {
   });
 
 });
-
-
-  ///////////////////////////////
-  // google map
-  ///////////////////////////////
-
-function initialize()
-{
-var mapProp = {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-  mapTypeId:google.maps.MapTypeId.ROADMAP,
-  disableDefaultUI: true,
-  scrollwheel: false
-  };
-var map=new google.maps.Map(document.getElementById("googleMap")
-  ,mapProp);
-}
-
-// uncomment this out to enable the google map api. (also go back to source control for how to readd it in)
-//google.maps.event.addDomListener(window, 'load', initialize);
