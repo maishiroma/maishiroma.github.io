@@ -637,6 +637,9 @@ function filterSelection(element, criteria)
           case "modals":
                allModalHeader.innerHTML = "All Modals";
                break;
+          case "writing":
+               allModalHeader.innerHTML = "All Writing Samples";
+               break;
           default:
                allModalHeader.innerHTML = "All Items";
      }
