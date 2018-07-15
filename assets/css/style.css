@@ -436,14 +436,13 @@ header{
 .modal-content {
     position: absolute;
     background-color: #fefefe;
-    margin: auto;
     border: 1px solid #888;
-    width: 80%;
+    width: 90vw;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s;
-    left: 10%;
-    top: 14%;
+    top: 15vh;
+    left: 5vw;
 }
 
 /* The Close Button */
@@ -499,7 +498,7 @@ header{
      margin-left: 15px;
      margin-right: 15px;
      white-space: normal;
-     max-height: calc(60vh - 300px);
+     max-height: calc(70vh - 300px);
      overflow-y: auto;
      overflow-x: hidden;
      text-align: left;
@@ -637,7 +636,7 @@ header{
 
 /*   Property of all images in the all modal   */
 .allModalImage {
-     width: 100%;
+     width: 70%;
      height: 20vh;
      cursor: pointer;
 }
