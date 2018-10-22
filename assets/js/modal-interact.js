@@ -124,6 +124,45 @@ function expandPreview(idOfPreview)
 	// Depending on the id that we pass in, we change what is currently being displayed
 	switch(idOfPreview)
 	{
+          case "Nebulaworks":
+               header = "DevOps Specialist <i>(July 2018 - Present)</i>"
+               message =
+               "<p>Currently part of the Engineering team, assisitng in company projects and clients with cloud computing software. " +
+               "When I first started at Nebulaworks, I went through internal training, which consisted of:</p>" +
+               "<ol>" +
+               "<li>Passing the Docker Certified Associate (DCA) Exam and the Certified Kubernetes Administrator (CKA) Exam</li>" +
+               "<li>Createing two blog posts</li>" +
+               "<li>Presenting two presentations in front of the engineering team</li>" +
+               "</ol>" +
+               "<p>Some of my daily tasks include: </p>" +
+               "<ol>" +
+               "<li>Participate in weekly meetings with the internal team and external team for projects I am participating in</li>" +
+               "<li>Demonstrate the knowledge I have accumulated during my initial training to complete daily tasks</li>" +
+               "<li>Work together with co-workers in order to solve complex issues together</li>" +
+               "</ol>" +
+               "<p>While working here, I picked up following skills:</p>" +
+               "<ol>" +
+               "<li>Containerization of applications (Docker)</li>" +
+               "<li>Swarm managements (Docker Swarm and Kubernetes Clusters)</li>" +
+               "<li>Linux Fundamentals (file systems, Terminal Commands)</li>" +
+               "<li>Bash Scripting</li>" +
+               "<li>Deployment Software (Terraform)</li>" +
+               "<li>Cloud Software (Amazon Web Services)</li>" +
+               "</ol>" +
+               "<p>At Nebulaworks, all of the employees are given the opportunity to attend key events, showcasing their work and networking " +
+               "with other peers. Some of the events that I partook in were: </p>" +
+               "<ul>" +
+               "<li>Amazon Web Service Summit 2018 (Anaheim, CA)</li>" +
+               "<li>Docker Meetup (October 12, 2018 at ROC in Irvine, CA)</li>" +
+               "<ul>" +
+               "<li>At the Docker Meetup, I presented a quick talk on tips and tricks into passing the DCA exam in 45 days.</li>" +
+               "</ul>" +
+               "</ul>";
+               modalImage1.src = "assets/images/portfolio/Nebulaworks2.png";
+               modalImage2.src = "assets/images/portfolio/Nebulaworks3.png";
+               modalVideoImage.src = "assets/images/portfolio/Nebulaworks4.png";
+               hasVideo = false;
+               break;
           case "Android":
                header = "Character Picker App <i>(December 2017)</i>";
                message =
