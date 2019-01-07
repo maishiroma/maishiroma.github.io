@@ -125,20 +125,20 @@ function expandPreview(idOfPreview)
 	switch(idOfPreview)
 	{
           case "Nebulaworks":
-               header = "DevOps Specialist <i>(July 2018 - Present)</i>"
+               header = "DevOps Specialist <i>(July 2018 - December 2018)</i>"
                message =
-               "<p>Currently part of the Engineering team, assisitng in company projects and clients with cloud computing software. " +
-               "When I first started at Nebulaworks, I went through internal training, which consisted of:</p>" +
+               "<p>As part of the Engineering team, I assisted in company projects and clients with cloud computing software. " +
+               "When I first started at Nebulaworks, I went through internal training, which included:</p>" +
                "<ol>" +
                "<li>Passing the Docker Certified Associate (DCA) Exam and the Certified Kubernetes Administrator (CKA) Exam</li>" +
                "<li>Createing two blog posts</li>" +
                "<li>Presenting two presentations in front of the engineering team</li>" +
                "</ol>" +
-               "<p>Some of my daily tasks include: </p>" +
+               "<p>Some of my daily tasks included: </p>" +
                "<ol>" +
-               "<li>Participate in weekly meetings with the internal team and external team for projects I am participating in</li>" +
-               "<li>Demonstrate the knowledge I have accumulated during my initial training to complete daily tasks</li>" +
-               "<li>Work together with co-workers in order to solve complex issues together</li>" +
+               "<li>Participating in weekly meetings with the internal team and external team for projects I am participating in</li>" +
+               "<li>Demonstrating the knowledge I have accumulated during my initial training to complete daily tasks</li>" +
+               "<li>Working together with co-workers in order to solve complex issues together</li>" +
                "</ol>" +
                "<p>While working here, I picked up following skills:</p>" +
                "<ol>" +
