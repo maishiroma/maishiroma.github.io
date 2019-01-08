@@ -100,6 +100,7 @@ function closePreview()
      modal.style.display = "none";
      modalVideoImage.style.display = "inline";
      modalVideo.style.display = "none";
+     modal.style.touch_action = "auto";
      YTPlayer.stopVideo();
      slideIndex = 0;
      loadedVideo = false;

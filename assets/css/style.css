@@ -430,6 +430,7 @@ header{
     height: 100%; /* Full height */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    touch-action: none;
 }
 
 /* Modal Content */
