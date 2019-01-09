@@ -125,10 +125,10 @@ function expandPreview(idOfPreview)
 	switch(idOfPreview)
 	{
           case "Nebulaworks":
-               header = "DevOps Specialist <i>(July 2018 - Present)</i>"
+               header = "DevOps Specialist <i>(July 2018 - December 2018)</i>"
                message =
-               "<p>Currently part of the Engineering team, assisitng in company projects and clients with cloud computing software. " +
-               "When I first started at Nebulaworks, I went through internal training, which consisted of:</p>" +
+               "<p>Was part of the Engineering team, assisted in company projects and clients with cloud computing software. " +
+               "When I first started at Nebulaworks, I went through internal training:</p>" +
                "<ol>" +
                "<li>Passing the Docker Certified Associate (DCA) Exam and the Certified Kubernetes Administrator (CKA) Exam</li>" +
                "<li>Createing two blog posts</li>" +
@@ -138,7 +138,7 @@ function expandPreview(idOfPreview)
                "<ol>" +
                "<li>Participate in weekly meetings with the internal team and external team for projects I am participating in</li>" +
                "<li>Demonstrate the knowledge I have accumulated during my initial training to complete daily tasks</li>" +
-               "<li>Work together with co-workers in order to solve complex issues together</li>" +
+               "<li>Work with co-workers in order to solve complex issues together</li>" +
                "</ol>" +
                "<p>While working here, I picked up following skills:</p>" +
                "<ol>" +
@@ -161,6 +161,25 @@ function expandPreview(idOfPreview)
                modalImage1.src = "assets/images/portfolio/Nebulaworks2.png";
                modalImage2.src = "assets/images/portfolio/Nebulaworks3.png";
                modalVideoImage.src = "assets/images/portfolio/Nebulaworks4.png";
+               hasVideo = false;
+               break;
+          case "WarePlai":
+               header = "Contract Programmer <i>(July 2018 - October 2018)</i>"
+               message =
+               "<p><i>NOTE: Due to the NDA Agreement upon signing, I cannot share any pictures of the final product.</i>" +
+               "<p>The company that I was a Research and Development Intern brought me onboard for a temporary in-hosue project. The project will be used as a proof-of-concept for the company to pitch later.</p>" +
+               "<p>The prototype was a mobile Augmented Reality 3D multiplayer fighting game. The game was created in Unity 2018, using various plugins such as AR Kit, AR Core, and Photon.</p>" +
+               "<p> Some of the tasks that I did include: </p>" +
+               "<ul>" +
+               "<li>Programmed the user interface for the main menus, lobby, and main gameplay</li> " +
+               "<li>Created custom scripts that allowed for specific functionality in certain menus</li> " +
+               "<li>Implemented the real world scanning feature for the game</li> " +
+               "</ul>" +
+               "<p>During the duration of this project, I worked closely with professional artists, placing their assets into the game, making sure the model, animations, and textures are properly imported.</p>"
+               ;
+               modalImage1.src = "assets/images/portfolio/WarePlai1.png";
+               modalImage2.src = "assets/images/portfolio/WarePlai2.png";
+               modalVideoImage.src = "assets/images/portfolio/WarePlai3.png";
                hasVideo = false;
                break;
           case "Android":
