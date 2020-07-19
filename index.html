@@ -43,7 +43,7 @@
     <header id="header">
         <div class="center text-center noselect">
             <h1 class="bigheadline">Matthew Shiroma</h1>
-            <h4 class="subheadline">Engineer, Game Dev Hobbiest, Optimist</h4>
+            <h4 class="subheadline">Cloud Engineer, Game Dev Hobbiest</h4>
         </div>
         <div class="bottom">
             <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i
@@ -93,14 +93,16 @@
                     <img class="AboutMe-pic" src="assets/images/profile_pic.jpg" alt="My pic" width="200" height="200">
                     </row>
                     <p class="AboutMe-text">
-                        Hello! I recently graduated from Chapman University majoring in Computer Science
-                        and minoring in Game Development and Programming. I am involved in numerous projects
-                        both in and out of the classroom, ranging from one off game jams to viable submissions
-                        to student game showcases. My diligence for work and passion in video games led
-                        me to pursue a career path of learning the science behind them. Whenever I get the chance,
-                        I strive to learn new knowledge that will help me in future programming endeavors or
-                        offer assistance in outside projects. During my free time, I catch up on my exponential
-                        list of games, network with people of similar interests, and play the Japanese Taiko drums.
+                        Why hello there, visitor! I'm a rising, yet talented engineer who loves all things tech related
+                        and games. I love to learn about new things constantly, whether it is related to cloud computing
+                        to delving deep into the next upcoming game engines. Throughout my career, I partook in numerous
+                        projects, both passion and professional ones. With each project, I put forth my vision and
+                        expertise into making the product the best it can be. I am currently inolved at my Cloud
+                        Engineer role at Nebulaworks, where I help deploy and educate clients with cloud computing
+                        resources; being an advocate of open source software and best practices. In my free time, I put
+                        time and care into my proof of concept video game ideas, which I publish all code to them openly
+                        on GitHub. Other than that, I create YouTube videos, go on nature hikes, and of course, going on
+                        food trips with close friends and family. I hope you enjoy your visit here!
                     </p>
                     <div>
                     </div>
@@ -115,12 +117,23 @@
                 <!--- These are the six projects that I want to showcase the most -->
                 <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                     <figure>
-                        <a onclick="expandPreview('Nebulaworks')"><img class="imagePreview"
+                        <a onclick="expandPreview('NebulaworksCloudEngineer')"><img class="imagePreview"
+                                src="assets/images/portfolio/NebulaworksNew1.png" alt="Nebulaworks Job"></a>
+                        <figcaption>
+                            <h3>Cloud Engineer</h3>
+                            <span>Nebulaworks</span>
+                            <a class="button" onclick="expandPreview('NebulaworksCloudEngineer')">Take a look!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                    <figure>
+                        <a onclick="expandPreview('NebulaworksDevOpsSpecialist')"><img class="imagePreview"
                                 src="assets/images/portfolio/Nebulaworks1.png" alt="Nebulaworks Job"></a>
                         <figcaption>
                             <h3>DevOps Specialist</h3>
                             <span>Nebulaworks</span>
-                            <a class="button" onclick="expandPreview('Nebulaworks')">Take a look!</a>
+                            <a class="button" onclick="expandPreview('NebulaworksDevOpsSpecialist')">Take a look!</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -165,17 +178,6 @@
                             <h3>Assisitant Programmer</h3>
                             <span>Chapman University</span>
                             <a class="button" onclick="expandPreview('BSEC')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('ISD')"><img class="imagePreview"
-                                src="assets/images/portfolio/ISD4.png" alt="In Solo Duo Logo"></a>
-                        <figcaption>
-                            <h3>Indie Developer</h3>
-                            <span>Matthew Shiroma</span>
-                            <a class="button" onclick="expandPreview('ISD')">Take a look!</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -258,7 +260,16 @@
 
                             <div class="column jobs">
                                 <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Nebulaworks')"
+                                    <img class="allModalImage" onclick="bringUpNewPreview('NebulaworksCloudEngineer')"
+                                        src="assets/images/portfolio/NebulaworksNew1.png" alt="Nebulaworks Job 2">
+                                    <h4>Cloud Engineer</h4>
+                                    <p>Helping clients all over with cloud computing and best practices.</p>
+                                </div>
+                            </div>
+                            <div class="column jobs">
+                                <div class="content">
+                                    <img class="allModalImage"
+                                        onclick="bringUpNewPreview('NebulaworksDevOpsSpecialist')"
                                         src="assets/images/portfolio/Nebulaworks1.png" alt="Nebulaworks Job">
                                     <h4>DevOps Specialist</h4>
                                     <p>Delved into the world of Cloud Computing and IT.</p>
@@ -287,6 +298,46 @@
                                     <h4>Beyond Space Energy Corp</h4>
                                     <p>Assisitant programmer for a Unity 5 mobile VR game, made for a Chapman
                                         University's senior thesis.</p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="https://www.nebulaworks.com/blog/2020/06/01/three-essential-machine-image-creation-rules-to-utilize/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/machineimage_blog.jpeg"
+                                            alt="Three Essential Machine Image Creation Rules To Utilize"></a>
+                                    <h4>Nebulaworks Blog: Three Essential Machine Image Creation Rules To Utilize</h4>
+                                    <p>Discusses best practices when creating machine images</p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="https://www.nebulaworks.com/blog/2020/02/11/upgrade-to-terraform-0-12-the-beginners-guide/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/terraform_blog.jpg"
+                                            alt="Upgrade to Terraform 0.12: The Beginner’s Guide"></a>
+                                    <h4>Nebulaworks Blog: Upgrade to Terraform 0.12: The Beginner’s Guide</h4>
+                                    <p>Tutorial on upgrading your terraform deployment to 0.12</p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="https://www.nebulaworks.com/blog/2019/08/27/leveraging-aws-ebs-for-kubernetes-persistent-volumes/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/awsebs_blog.jpg"
+                                            alt="Leveraging AWS EBS for Kubernetes Persistent Volumes"></a>
+                                    <h4>Nebulaworks Blog: Leveraging AWS EBS for Kubernetes Persistent Volumes</h4>
+                                    <p>Short blog showcasing using AWS EBS with kubernetes</p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="https://www.nebulaworks.com/blog/2019/04/22/simplify-your-gce-instance-bootstrapping-with-terraform/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/gke_blog.jpg"
+                                            alt="Simplify Your GCE Instance Bootstrapping with Terraform"></a>
+                                    <h4>Nebulaworks Blog: Simplify Your GCE Instance Bootstrapping with Terraform</h4>
+                                    <p>Discussing strategy for GCE Instance bootstrapping</p>
                                 </div>
                             </div>
                             <div class="column writing">
