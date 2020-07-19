@@ -71,6 +71,8 @@
                                         class="menu-effect"></span></li>
                                 <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-folder"></i></a><span
                                         class="menu-effect"></span></li>
+                                <li><a data-scroll href="#links">Repo Links <i class="pe-7s-link"></i></a><span
+                                        class="menu-effect"></span></li>
                                 <li><a data-scroll href="#contact">Contact <i class="pe-7s-comment"></i></a><span
                                         class="menu-effect"></span></li>
                             </ul>
@@ -248,16 +250,18 @@
                     <div class="modal-body">
                         <div id="filerButtons">
                             <button class="btn_All active" onclick="filterSelection(this,'all')"> All</button>
+                            <button class="btn_All" onclick="filterSelection(this,'jobs')"> Jobs</button>
+                            <button class="btn_All" onclick="filterSelection(this,'internships')"> Internships</button>
                             <button class="btn_All" onclick="filterSelection(this,'games')"> Games</button>
+                            <button class="btn_All" onclick="filterSelection(this,'videos')"> Videos</button>
+                            <button class="btn_All" onclick="filterSelection(this,'writing')"> Writing</button>
                             <button class="btn_All" onclick="filterSelection(this,'applications')">
                                 Applications</button>
-                            <button class="btn_All" onclick="filterSelection(this,'internships')"> Internships</button>
-                            <button class="btn_All" onclick="filterSelection(this,'jobs')"> Jobs</button>
-                            <button class="btn_All" onclick="filterSelection(this,'modals')"> 3D Modals</button>
-                            <button class="btn_All" onclick="filterSelection(this,'writing')"> Writing</button>
+                            <button class="btn_All" onclick="filterSelection(this,'models')"> 3D Models</button>
                         </div>
                         <div id="allModalContent" class="row_allContentModal">
 
+                            <!--Professional Experiences-->
                             <div class="column jobs">
                                 <div class="content">
                                     <img class="allModalImage" onclick="bringUpNewPreview('NebulaworksCloudEngineer')"
@@ -283,6 +287,35 @@
                                     <p>Sparked the creation of an in-house prototype.</p>
                                 </div>
                             </div>
+                            <div class="column internships jobs">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('QMerit')"
+                                        src="assets/images/portfolio/Qmerit1.jpg" alt="Qmerit Internship Pic">
+                                    <h4>QMerit</h4>
+                                    <p>As a QA Intern, assisted in the creation of API automation test cases during
+                                        Summer 2017.</p>
+                                </div>
+                            </div>
+                            <div class="column internships">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('ROC')"
+                                        src="assets/images/portfolio/ROC3.png" alt="Reign Of Cthulhu Pic">
+                                    <h4>Arvada Labs</h4>
+                                    <p>As a R&D intern, facilitated the creation of a companion app for this game's
+                                        Kickstarter.</p>
+                                </div>
+                            </div>
+                            <div class="column internships">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('TSG')"
+                                        src="assets/images/portfolio/TSG3.jpeg" alt="Top Shelf Gaming Pic">
+                                    <h4>Top Shelf Gaming (TSG)</h4>
+                                    <p>During Fall 2017, participted as an online writer to connect videog games with
+                                        culture.</p>
+                                </div>
+                            </div>
+
+                            <!--Major Game Projects-->
                             <div class="column games">
                                 <div class="content">
                                     <img class="allModalImage" onclick="bringUpNewPreview('Astrae')"
@@ -300,6 +333,49 @@
                                         University's senior thesis.</p>
                                 </div>
                             </div>
+                            <div class="column games">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('ISD')"
+                                        src="assets/images/portfolio/ISD4.png" alt="In Solo Duo Game Pic">
+                                    <h4>In Solo Duo</h4>
+                                    <p>An independent venture done in GameMaker, picked off from the final project done
+                                        at Summer@USC in 2013.</p>
+                                </div>
+                            </div>
+                            <div class="column games">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('Reflections')"
+                                        src="assets/images/portfolio/Reflections3.png" alt="Reflection Game Pic">
+                                    <h4>Reflections</h4>
+                                    <p>A Chapman University group project done in Unity 5, contributing as Lead
+                                        Programmer.</p>
+                                </div>
+                            </div>
+
+                            <!--Professional Video Content-->
+                            <div class="column videos">
+                                <div class="content">
+                                    <a href="https://www.youtube.com/watch?v=R_v4rnsbbIM" target="_blank"><img
+                                            class="allModalImage"
+                                            src="assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg" alt=""></a>
+                                    <h4>Nebulaworks Whiteboarding: Three things to keep in mind when using Azure DevOps
+                                        Pipelines
+                                        Mesh</h4>
+                                    <p>An overview of how to utilize Azure Dev Ops Pipelines to its fullest extent</p>
+                                </div>
+                            </div>
+                            <div class="column videos">
+                                <div class="content">
+                                    <a href="https://www.youtube.com/watch?v=lzxYHHr6_cU" target="_blank"><img
+                                            class="allModalImage"
+                                            src="assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg" alt=""></a>
+                                    <h4>Nebulaworks Whiteboarding: Three Things to Understand Before Using a Service
+                                        Mesh</h4>
+                                    <p>An overview of best practices when it comes to using Service Mesh tools</p>
+                                </div>
+                            </div>
+
+                            <!--Professional Writing Content-->
                             <div class="column writing">
                                 <div class="content">
                                     <a href="https://www.nebulaworks.com/blog/2020/06/01/three-essential-machine-image-creation-rules-to-utilize/"
@@ -360,23 +436,6 @@
                                         services.</p>
                                 </div>
                             </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('ISD')"
-                                        src="assets/images/portfolio/ISD4.png" alt="In Solo Duo Game Pic">
-                                    <h4>In Solo Duo</h4>
-                                    <p>An independent venture done in GameMaker, picked off from the final project done
-                                        at Summer@USC in 2013.</p>
-                                </div>
-                            </div>
-                            <div class="column applications">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Chat')"
-                                        src="assets/images/portfolio/Chat3.png" alt="Elixir Chat Pic">
-                                    <h4>Online Chat Service</h4>
-                                    <p>Using Elixir,created an open chat service that can hold up to 15 people.</p>
-                                </div>
-                            </div>
                             <div class="column writing">
                                 <div class="content">
                                     <a href="http://topshelfgaming.net/tamagotchi-anniversary-revives-its-iconic-toy/"
@@ -396,23 +455,6 @@
                                     <h4>TSG News: Naughty Dog Employee Speaks out on Sexual Harrassment</h4>
                                     <p>Some insight on a disturbing incident that a formel Naughty Dog employee
                                         disclosed.</p>
-                                </div>
-                            </div>
-                            <div class="column applications">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Drumpf')"
-                                        src="assets/images/portfolio/Drumpf3.png" alt="Drumpf Program Pic">
-                                    <h4>Twitter Sentiment Analysis</h4>
-                                    <p>A co-op Python program that analyzis top Twitter trends to retweet.</p>
-                                </div>
-                            </div>
-                            <div class="column modals">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Odyssey')"
-                                        src="assets/images/portfolio/modals/Odyssey.jpg" alt="Odyseey Pic">
-                                    <h4>Mario's Odyseey</h4>
-                                    <p>The final project for an Intro to Digital Arts Class: a recreation of the Odyssey
-                                        from Super Mario Odyssey.</p>
                                 </div>
                             </div>
                             <div class="column writing">
@@ -436,35 +478,6 @@
                                     <p>An brief look on Microsoft's plans for the Kinect.</p>
                                 </div>
                             </div>
-                            <div class="column internships jobs">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('QMerit')"
-                                        src="assets/images/portfolio/Qmerit1.jpg" alt="Qmerit Internship Pic">
-                                    <h4>QMerit</h4>
-                                    <p>As a QA Intern, assisted in the creation of API automation test cases during
-                                        Summer 2017.</p>
-                                </div>
-                            </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Reflections')"
-                                        src="assets/images/portfolio/Reflections3.png" alt="Reflection Game Pic">
-                                    <h4>Reflections</h4>
-                                    <p>A Chapman University group project done in Unity 5, contributing as Lead
-                                        Programmer.</p>
-                                </div>
-                            </div>
-                            <div class="column writing">
-                                <div class="content">
-                                    <a href="http://topshelfgaming.net/playstation-trophies-can-now-exchanged-reward-points/"
-                                        target="_blank"><img class="allModalImage"
-                                            src="assets/images/portfolio/writing/PlayStationTrophies.jpg"
-                                            alt="TSG Writing PS Trophies"></a>
-                                    <h4>TSG News: PlayStation Trophies and Digital Points</h4>
-                                    <p>Talks about how acheivments can be converted to rewards in the PlayStation Store.
-                                    </p>
-                                </div>
-                            </div>
                             <div class="column writing">
                                 <div class="content">
                                     <a href="http://topshelfgaming.net/first-competitive-gaming-experience/"
@@ -474,61 +487,6 @@
                                     <h4>TSG Reflection Article</h4>
                                     <p>I share a personal experience of participating in a major Super Smash Brothers 4
                                         Wii U Tournment.</p>
-                                </div>
-                            </div>
-                            <div class="column modals">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Catapult')"
-                                        src="assets/images/portfolio/modals/Catapult.jpg" alt="Catapult Modal Pic">
-                                    <h4>Steam Punk Catapult </h4>
-                                    <p>Created out of imspiration of medieval and steam punk eras.</p>
-                                </div>
-                            </div>
-                            <div class="column internships">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('ROC')"
-                                        src="assets/images/portfolio/ROC3.png" alt="Reign Of Cthulhu Pic">
-                                    <h4>Arvada Labs</h4>
-                                    <p>As a R&D intern, facilitated the creation of a companion app for this game's
-                                        Kickstarter.</p>
-                                </div>
-                            </div>
-                            <div class="column writing">
-                                <div class="content">
-                                    <a href="http://topshelfgaming.net/a-hopeless-boss-fight-is-a-good-idea/"
-                                        target="_blank"><img class="allModalImage"
-                                            src="assets/images/portfolio/writing/Opinion.png"
-                                            alt="TSG Writing Opinion Article"></a>
-                                    <h4>TSG Opinion Article</h4>
-                                    <p>I convince the reader on the validity of a video game that makes you lose on
-                                        purpose.</p>
-                                </div>
-                            </div>
-                            <div class="column writing">
-                                <div class="content">
-                                    <a href="http://topshelfgaming.net/motivation-play-game-story/" target="_blank"><img
-                                            class="allModalImage" src="assets/images/portfolio/writing/Feature.png"
-                                            alt="TSG Writing Feature Article"></a>
-                                    <h4>TSG Feature Article</h4>
-                                    <p>I bring up examples of how a game can convince players to experience its story.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="column internships">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('TSG')"
-                                        src="assets/images/portfolio/TSG3.jpeg" alt="Top Shelf Gaming Pic">
-                                    <h4>Top Shelf Gaming (TSG)</h4>
-                                    <p>During Fall 2017, participted as an online writer to connect videog games with
-                                        culture.</p>
-                                </div>
-                            </div>
-                            <div class="column modals">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('LowPoly')"
-                                        src="assets/images/portfolio/modals/StarMeteor.jpg" alt="Flower Low Poly Pic">
-                                    <h4>Low Poly Art</h4>
-                                    <p>Some of the models I created for the Beyond Space Energy Corp game.</p>
                                 </div>
                             </div>
                             <div class="column writing">
@@ -552,12 +510,89 @@
                                     <p>I interview Florenct Maurin on his latest indie game, Bury Me, My Love.</p>
                                 </div>
                             </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="http://topshelfgaming.net/playstation-trophies-can-now-exchanged-reward-points/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/PlayStationTrophies.jpg"
+                                            alt="TSG Writing PS Trophies"></a>
+                                    <h4>TSG News: PlayStation Trophies and Digital Points</h4>
+                                    <p>Talks about how acheivments can be converted to rewards in the PlayStation Store.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="http://topshelfgaming.net/a-hopeless-boss-fight-is-a-good-idea/"
+                                        target="_blank"><img class="allModalImage"
+                                            src="assets/images/portfolio/writing/Opinion.png"
+                                            alt="TSG Writing Opinion Article"></a>
+                                    <h4>TSG Opinion Article</h4>
+                                    <p>I convince the reader on the validity of a video game that makes you lose on
+                                        purpose.</p>
+                                </div>
+                            </div>
+                            <div class="column writing">
+                                <div class="content">
+                                    <a href="http://topshelfgaming.net/motivation-play-game-story/" target="_blank"><img
+                                            class="allModalImage" src="assets/images/portfolio/writing/Feature.png"
+                                            alt="TSG Writing Feature Article"></a>
+                                    <h4>TSG Feature Article</h4>
+                                    <p>I bring up examples of how a game can convince players to experience its story.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Applications/Side Projects -->
+                            <div class="column applications">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('Chat')"
+                                        src="assets/images/portfolio/Chat3.png" alt="Elixir Chat Pic">
+                                    <h4>Online Chat Service</h4>
+                                    <p>Using Elixir,created an open chat service that can hold up to 15 people.</p>
+                                </div>
+                            </div>
+                            <div class="column applications">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('Drumpf')"
+                                        src="assets/images/portfolio/Drumpf3.png" alt="Drumpf Program Pic">
+                                    <h4>Twitter Sentiment Analysis</h4>
+                                    <p>A co-op Python program that analyzis top Twitter trends to retweet.</p>
+                                </div>
+                            </div>
                             <div class="column applications">
                                 <div class="content">
                                     <img class="allModalImage" onclick="bringUpNewPreview('Android')"
                                         src="assets/images/portfolio/Android1.png" alt="Android App Pic">
                                     <h4>Character Picker</h4>
                                     <p>An Android Application demonstrating my knowledge of Android.</p>
+                                </div>
+                            </div>
+
+                            <!--Art/Game Models-->
+                            <div class="column models">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('Odyssey')"
+                                        src="assets/images/portfolio/modals/Odyssey.jpg" alt="Odyseey Pic">
+                                    <h4>Mario's Odyseey</h4>
+                                    <p>The final project for an Intro to Digital Arts Class: a recreation of the Odyssey
+                                        from Super Mario Odyssey.</p>
+                                </div>
+                            </div>
+                            <div class="column models">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('Catapult')"
+                                        src="assets/images/portfolio/modals/Catapult.jpg" alt="Catapult Modal Pic">
+                                    <h4>Steam Punk Catapult </h4>
+                                    <p>Created out of imspiration of medieval and steam punk eras.</p>
+                                </div>
+                            </div>
+                            <div class="column models">
+                                <div class="content">
+                                    <img class="allModalImage" onclick="bringUpNewPreview('LowPoly')"
+                                        src="assets/images/portfolio/modals/StarMeteor.jpg" alt="Flower Low Poly Pic">
+                                    <h4>Low Poly Art</h4>
+                                    <p>Some of the models I created for the Beyond Space Energy Corp game.</p>
                                 </div>
                             </div>
                         </div>

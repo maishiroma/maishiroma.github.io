@@ -662,22 +662,25 @@ function filterSelection(element, criteria) {
 
      switch (criteria) {
           case "games":
-               allModalHeader.innerHTML = "All Games";
+               allModalHeader.innerHTML = "Games";
                break;
           case "internships":
-               allModalHeader.innerHTML = "All Internships";
+               allModalHeader.innerHTML = "Internships";
                break;
           case "applications":
-               allModalHeader.innerHTML = "All Applications";
+               allModalHeader.innerHTML = "Applications";
                break;
           case "jobs":
-               allModalHeader.innerHTML = "All Jobs";
+               allModalHeader.innerHTML = "Jobs";
                break;
-          case "modals":
-               allModalHeader.innerHTML = "All Modals";
+          case "models":
+               allModalHeader.innerHTML = "3D Models";
                break;
           case "writing":
-               allModalHeader.innerHTML = "All Writing Samples";
+               allModalHeader.innerHTML = "Writing Samples";
+               break;
+          case "videos":
+               allModalHeader.innerHTML = "Videos";
                break;
           default:
                allModalHeader.innerHTML = "All Items";
