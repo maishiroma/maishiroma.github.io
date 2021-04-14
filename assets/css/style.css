@@ -706,7 +706,7 @@ header{
 .moreDetails {
     color: #fff;
     text-align: center;
-    padding-right: 50px;
+    margin-bottom: 30px;
 }
 .con-title {
     font-weight: 300;
@@ -768,7 +768,7 @@ header{
     margin: 0 auto;
     margin-bottom: 30px;
 }
-.scoialinks {
+.social-links {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -776,19 +776,15 @@ header{
 .social-icons {
     display: inline-block;
     padding: 0px 5px;
+    width: 50px;
+    height: 40px;
 }
+
 .social-icons a {
     display: block;
     width: 50px;
     height: 50px;
     background-size: 100% 200%;
-}
-
-.social-icons a:hover {
-    background-position: 0px -50px;
-}
-.linkedin{
-	background-image: url(../images/icons/linkedin.png);
 }
 
 
@@ -909,9 +905,6 @@ footer {
 	.item-space figure {
 	    max-width: 360px;
 	    margin: 0 auto;
-	}
-	.moreDetails {
-		margin-bottom: 60px;
 	}
 	.copyright, .designed {
 		text-align: center;
