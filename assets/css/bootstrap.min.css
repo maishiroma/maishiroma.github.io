@@ -5766,7 +5766,7 @@ a.list-group-item-danger.active:hover {
     color: #000;
     text-shadow: 0 1px 0 #fff;
     filter: alpha(opacity=20);
-    opacity: 0.2;
+    opacity: 0.5;
 }
 .close:focus,
 .close:hover {
@@ -5855,7 +5855,7 @@ button.close {
     border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
-    margin-top: -2px;
+    margin-top: 5px;
 }
 .modal-title {
     margin: 0;
