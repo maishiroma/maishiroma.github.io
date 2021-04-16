@@ -67,8 +67,12 @@
                             <ul>
                                 <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span
                                         class="menu-effect"></span></li>
-                                <li><a data-scroll href="#AboutMe">About Me <i class="pe-7s-user"></i></a><span
+                                <li><a data-scroll href="#aboutme">About Me <i class="pe-7s-user"></i></a><span
                                         class="menu-effect"></span></li>
+                                <li>
+                                    <a data-scroll href="#posts">Latest Posts <i class="pe-7s-news-paper"></i></a><span
+                                        class="menu-effect"></span>
+                                </li>
                                 <li><a data-scroll href="#portfolio">My Portfolio <i class="pe-7s-folder"></i></a><span
                                         class="menu-effect"></span></li>
                                 <li><a data-scroll href="#links">Repository Links <i class="pe-7s-link"></i></a><span
@@ -79,21 +83,19 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Content Area -->
     <!-- About Me Area -->
-    <section id="AboutMe" class="AboutMe-area noselect">
+    <section id="aboutme" class="AboutMe-area noselect">
         <div class="container" style="white-space:nowrap">
             <h2 class="block_title">About Me</h2>
 
             <div class="AboutMe-bio">
                 <div class="row">
-                    <img class="AboutMe-pic" src="assets/images/profile_pic.jpg" alt="My pic" width="200" height="200">
-                    </row>
+                    <img class="AboutMe-pic" src="assets/images/profile_pic.jpg" alt="My pic">
                     <p class="AboutMe-text">
                         Why hello there, visitor! I'm a rising, yet talented engineer who loves all things tech related
                         and games. I love to learn about new things constantly, whether it is related to cloud computing
@@ -106,8 +108,39 @@
                         on GitHub. Other than that, I create YouTube videos, go on nature hikes, and of course, going on
                         food trips with close friends and family. I hope you enjoy your visit here!
                     </p>
-                    <div>
-                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Blog Posts-->
+    <section id="posts" class="blog-area noselect">
+        <div class="container" style="white-space:nowrap">
+            <h2 class="block_title">Latest Posts</h2>
+
+            <div class="row port cs-style-3">
+                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                    <figure>
+                        <a href="blog/index.html">
+                            <img class="imagePreview" src="assets/images/portfolio/Android1.png" alt="test">
+                        </a>
+                        <figcaption>
+                            <h3>Example Blog Post</h3>
+                            <span>Matthew Shiroma</span>
+                            <a class="button" onclick="window.location.href='blog/May_1.html';">Read Me!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="btn-center">
+                    <button id="allButton" class="big button" onclick="window.location.href='blog/index.html';">To
+                        Blog</button>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio Area -->
@@ -119,8 +152,10 @@
                 <!--- These are the six projects that I want to showcase the most -->
                 <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                     <figure>
-                        <a onclick="expandPreview('NebulaworksCloudEngineer')"><img class="imagePreview"
-                                src="assets/images/portfolio/NebulaworksNew1.png" alt="Nebulaworks Job"></a>
+                        <a onclick="expandPreview('NebulaworksCloudEngineer')">
+                            <img class="imagePreview" src="assets/images/portfolio/NebulaworksNew1.png"
+                                alt="Nebulaworks Job">
+                        </a>
                         <figcaption>
                             <h3>Cloud Engineer</h3>
                             <span>Nebulaworks</span>
@@ -597,13 +632,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <p></p>
-                </div>
+                <div class="modal-footer"></div>
             </div>
-        </div>
-
-        </div><!-- container -->
+        </div> <!-- container -->
     </section><!-- portfolio -->
 
     <!-- Links -->
@@ -635,6 +666,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Contact Area -->
