@@ -65,35 +65,47 @@
                         <div class="dropdown-menu">
                             <div class="arrow-up"></div>
                             <ul>
-                                <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span
-                                        class="menu-effect"></span></li>
-                                <li><a data-scroll href="#AboutMe">About Me <i class="pe-7s-user"></i></a><span
-                                        class="menu-effect"></span></li>
-                                <li><a data-scroll href="#portfolio">My Portfolio <i class="pe-7s-folder"></i></a><span
-                                        class="menu-effect"></span></li>
-                                <li><a data-scroll href="#links">Repository Links <i class="pe-7s-link"></i></a><span
-                                        class="menu-effect"></span></li>
-                                <li><a data-scroll href="#contact">Contact Me <i class="pe-7s-comment"></i></a><span
-                                        class="menu-effect"></span></li>
+                                <li>
+                                    <a data-scroll href="#body">Home <i class="pe-7s-home"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#aboutme">About Me <i class="pe-7s-user"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#posts">Blog Updates <i class="pe-7s-news-paper"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#portfolio">My Portfolio <i class="pe-7s-folder"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#links">Repository Links <i class="pe-7s-link"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#contact">Contact Me <i class="pe-7s-comment"></i></a>
+                                    <span class="menu-effect"></span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Content Area -->
     <!-- About Me Area -->
-    <section id="AboutMe" class="AboutMe-area noselect">
+    <section id="aboutme" class="AboutMe-area noselect">
         <div class="container" style="white-space:nowrap">
             <h2 class="block_title">About Me</h2>
 
             <div class="AboutMe-bio">
                 <div class="row">
-                    <img class="AboutMe-pic" src="assets/images/profile_pic.jpg" alt="My pic" width="200" height="200">
-                    </row>
+                    <img class="AboutMe-pic" src="assets/images/site_global/profile_pic.jpg" alt="My pic">
                     <p class="AboutMe-text">
                         Why hello there, visitor! I'm a rising, yet talented engineer who loves all things tech related
                         and games. I love to learn about new things constantly, whether it is related to cloud computing
@@ -106,8 +118,52 @@
                         on GitHub. Other than that, I create YouTube videos, go on nature hikes, and of course, going on
                         food trips with close friends and family. I hope you enjoy your visit here!
                     </p>
-                    <div>
-                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Blog Posts-->
+    <section id="posts" class="blog-area noselect">
+        <div class="container" style="white-space:nowrap">
+            <h2 class="block_title"> Blog Updates</h2>
+            <div class="row port cs-style-3">
+                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                    <figure>
+                        <a href="blog/Apr_21_2021.html">
+                            <img class="imagePreview" src="assets/images/blog/Apr_21_2021.png" alt="Myself at NWI">
+                        </a>
+                        <figcaption>
+                            <h3>A New Coat of Paint!</h3>
+                            <span>Published 05-20-2020</span>
+                            <a class="button" onclick="window.location.href='blog/Apr_21_2021.html';">Read Me!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                    <figure>
+                        <a href="blog/Dec_5_2018.html">
+                            <img class="imagePreview" src="assets/images/blog/Dec_5_2018.png" alt="CKS">
+                        </a>
+                        <figcaption>
+                            <h3>The End of an Era?</h3>
+                            <span>Published 12-5-2018</span>
+                            <a class="button" onclick="window.location.href='blog/Dec_5_2018.html';">Read Me!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="btn-center">
+                    <button id="allButton" class="big button" onclick="window.location.href='blog/index.html';">Visit
+                        Blog</button>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
     <!-- Portfolio Area -->
@@ -119,11 +175,13 @@
                 <!--- These are the six projects that I want to showcase the most -->
                 <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                     <figure>
-                        <a onclick="expandPreview('NebulaworksCloudEngineer')"><img class="imagePreview"
-                                src="assets/images/portfolio/NebulaworksNew1.png" alt="Nebulaworks Job"></a>
+                        <a onclick="expandPreview('NebulaworksCloudEngineer')">
+                            <img class="imagePreview" src="assets/images/portfolio/NebulaworksNew1.png"
+                                alt="Nebulaworks Job">
+                        </a>
                         <figcaption>
                             <h3>Cloud Engineer</h3>
-                            <span>Nebulaworks</span>
+                            <span>@ Nebulaworks</span>
                             <a class="button" onclick="expandPreview('NebulaworksCloudEngineer')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -134,7 +192,7 @@
                                 src="assets/images/portfolio/Nebulaworks1.png" alt="Nebulaworks Job"></a>
                         <figcaption>
                             <h3>DevOps Specialist</h3>
-                            <span>Nebulaworks</span>
+                            <span>@ Nebulaworks</span>
                             <a class="button" onclick="expandPreview('NebulaworksDevOpsSpecialist')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -145,7 +203,7 @@
                                 src="assets/images/portfolio/WarePlai1.png" alt="WarePlai Logo"></a>
                         <figcaption>
                             <h3>Contract Programmer</h3>
-                            <span>WarePlai LLC</span>
+                            <span>@ WarePlai LLC</span>
                             <a class="button" onclick="expandPreview('WarePlai')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -156,7 +214,7 @@
                                 src="assets/images/portfolio/ROC3.png" alt="Reign Of Cthulhu Logo"></a>
                         <figcaption>
                             <h3>R&D Intern</h3>
-                            <span>Arvada Labs</span>
+                            <span>@ Arvada Labs</span>
                             <a class="button" onclick="expandPreview('ROC')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -167,7 +225,7 @@
                                 src="assets/images/portfolio/Astrae3.png" alt="Astrae Logo"></a>
                         <figcaption>
                             <h3>Lead Programmer</h3>
-                            <span>LCAD Collaboration</span>
+                            <span>@ LCAD</span>
                             <a class="button" onclick="expandPreview('Astrae')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -178,7 +236,7 @@
                                 src="assets/images/portfolio/BSEC2.jpg" alt="Beyond Space Energy Corp Logo"></a>
                         <figcaption>
                             <h3>Assisitant Programmer</h3>
-                            <span>Chapman University</span>
+                            <span>@ Chapman University</span>
                             <a class="button" onclick="expandPreview('BSEC')">Take a look!</a>
                         </figcaption>
                     </figure>
@@ -200,21 +258,24 @@
                     <div class="modal-body">
                         <div class="slideshow-container">
                             <div class="slides">
-                                <a id="ModalImage1Expand" href="assets/images/Custom404.png" target="_blank">
-                                    <img id="ModalImage1" class="slidesImage" src="assets/images/Custom404.png"
-                                        alt="portfolio image">
+                                <a id="ModalImage1Expand" href="assets/images/site_global/Custom404.png"
+                                    target="_blank">
+                                    <img id="ModalImage1" class="slidesImage"
+                                        src="assets/images/site_global/Custom404.png" alt="portfolio image">
                                 </a>
                             </div>
                             <div class="slides">
-                                <a id="ModalImage2Expand" href="assets/images/Custom404.png" target="_blank">
-                                    <img id="ModalImage2" class="slidesImage" src="assets/images/Custom404.png"
-                                        alt="portfolio image">
+                                <a id="ModalImage2Expand" href="assets/images/site_global/Custom404.png"
+                                    target="_blank">
+                                    <img id="ModalImage2" class="slidesImage"
+                                        src="assets/images/site_global/Custom404.png" alt="portfolio image">
                                 </a>
                             </div>
                             <div class="slides">
-                                <a id="ModalImage3Expand" href="assets/images/Custom404.png" target="_blank">
-                                    <img id="modalVideoImage" class="slidesImage" src="assets/images/404Gif.gif"
-                                        alt="Loading Video...">
+                                <a id="ModalImage3Expand" href="assets/images/site_global/Custom404.png"
+                                    target="_blank">
+                                    <img id="modalVideoImage" class="slidesImage"
+                                        src="assets/images/site_global/404Gif.gif" alt="Loading Video...">
                                 </a>
                                 <iframe id="ModalVideo" class="videoModal"
                                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&rel=0"
@@ -597,13 +658,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <p></p>
-                </div>
+                <div class="modal-footer"></div>
             </div>
-        </div>
-
-        </div><!-- container -->
+        </div> <!-- container -->
     </section><!-- portfolio -->
 
     <!-- Links -->
@@ -635,6 +692,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Contact Area -->
@@ -660,7 +718,7 @@
                     <p class="designed">Theme by <a href="https://themewagon.com" target="_blank">Themewagon</a></p>
                 </div>
                 <div class="col-sm-6">
-                    <p class="copyright"><i>© Copyright 2018 Matthew Shiroma</i></p>
+                    <p class="copyright"><i>© Copyright 2018-2021 Matthew Shiroma</i></p>
                 </div>
                 <div class="col-sm-3">
                     <p class="designed">Made with <span style="color: #e25555;">&#9829;</span> by GitHub</p>

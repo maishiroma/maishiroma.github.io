@@ -18,10 +18,11 @@ Text Domain: darkjoe
 * 02.0 - Header
 * 03.0 - Navigation
 * 04.0 - AboutMe
-* 05.0 - Portfolio
+* 05.0 - Blog Posts
+* 06.0 - Portfolio
 * 06.0 - Contact
-* 07.0 - Footer
-* 08.0 - Responsive Fixes
+* 08.0 - Footer
+* 09.0 - Responsive Fixes
 * -----------------------------------------------------------------------------
 */
 
@@ -51,6 +52,7 @@ a:hover,a:active,a:focus{
 	opacity: 0.9;
 	outline: none;
 }
+
 .btn {
     color: #fff;
     background: transparent;
@@ -171,6 +173,10 @@ header{
 	vertical-align: middle;
 }
 
+.logo-text:not(:hover){
+    color: #fff;
+}
+
 .menu {
     float: right;
     font-size: 3em;
@@ -268,6 +274,8 @@ header{
      display: block;
      margin-left: auto;
      margin-right: auto;
+     width: 200px;
+     height: 200px;
 }
 .AboutMe-text{
      padding-top: 50px;
@@ -275,9 +283,57 @@ header{
      margin-right: 20px;
 }
 
+/* /////////////////////////////////////////////////////////////////////
+//  05 - Blog Posts
+/////////////////////////////////////////////////////////////////////*/
+
+.blog-area {
+    margin: 80px 0px 0px 0px;
+}
+
+.blog-area-title {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    white-space: normal;
+}
+
+.blog-area-subtitle {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    white-space: normal;
+}
+
+.blog-area-date {
+    font-size: 1.5em;
+    text-decoration: underline black;
+    font-weight: 100;
+    text-align: center;
+}
+
+.blog-area-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-area-text {
+    display: block;
+    white-space: normal;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
 
 /* /////////////////////////////////////////////////////////////////////
-//  05 - Portfolio
+//  06 - Portfolio
 /////////////////////////////////////////////////////////////////////*/
 
 
@@ -321,10 +377,6 @@ header{
 	margin: 0px 0px 8px 0px;
 	padding: 0;
 	color: #fff;
-}
-
-.port figcaption span:before {
-	content: 'by ';
 }
 
 .port figcaption a {
@@ -681,7 +733,7 @@ header{
 }
 
 /* /////////////////////////////////////////////////////////////////////
-//  06 - Contact
+//  07 - Contact
 /////////////////////////////////////////////////////////////////////*/
 
 
@@ -796,7 +848,7 @@ header{
 
 
 /* /////////////////////////////////////////////////////////////////////
-//  07 - Footer
+//  08 - Footer
 /////////////////////////////////////////////////////////////////////*/
 
 
@@ -823,7 +875,7 @@ footer {
 
 
 /* /////////////////////////////////////////////////////////////////////
-//  08 - Responsive Fixes
+//  09 - Responsive Fixes
 /////////////////////////////////////////////////////////////////////*/
 
 
