@@ -321,6 +321,8 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
+    height: auto;
 }
 
 .blog-area-text {
@@ -530,6 +532,30 @@ header{
     cursor: pointer;
 }
 
+/* Override for mobile  */
+@media only screen and (max-width: 600px){
+   .return {
+        color: black;
+        float: left;
+        font-size: 15px;
+        font-weight: bold;
+        display: none;
+        margin-top: 0px;
+        opacity: 0.5;
+   }
+
+   .close {
+        color: black;
+        float: right;
+        font-size: 25px;
+        font-weight: bold;
+   }
+
+   .modal-header .close {
+        margin-top: 0px;
+    }
+}
+
 
 /* Modal Header */
 .modal-header {
@@ -537,6 +563,17 @@ header{
     background-color: #b30000;
     color: white;
     text-align: center;
+}
+
+.modal-header-text {
+    font-size: 30px;
+}
+
+/* Override for mobile  */
+@media only screen and (max-width: 600px){
+    .modal-header-text {
+        font-size: 15px;
+    }
 }
 
 /* Modal Body */
@@ -614,12 +651,9 @@ header{
 
 /* Caption text */
 .slides-text {
-  color: #f2f2f2;
+  color: #000;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+  position: block;
   text-align: center;
 }
 
@@ -646,7 +680,7 @@ header{
 
 /* The image on the current slide */
 .slidesImage {
-     width: 20vw;
+     width: 30%;
      height: 10%;
 }
 
@@ -690,7 +724,7 @@ header{
 
 /*   Property of all images in the all modal   */
 .allModalImage {
-     width: 20vw;
+     width: 50%;
      height: 20vh;
      cursor: pointer;
 }
@@ -730,6 +764,35 @@ header{
 .btn_All.active {
   background-color: #666;
    color: white;
+}
+
+/* Override for mobile  */
+@media only screen and (max-width: 600px){
+    .row_allContentModal{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-height: calc(100vh - 300px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .allModalImage {
+        width: 50%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .slidesImage {
+        width: 30%;
+        height: auto;
+    }
+
+    .videoModal{
+        width: 60vw;
+        height: auto;
+        display: none;
+    }
 }
 
 /* /////////////////////////////////////////////////////////////////////

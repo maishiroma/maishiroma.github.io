@@ -253,9 +253,14 @@
                     <div class="modal-header">
                         <span class="close" onclick="closePreview()">&times;</span>
                         <span id="returnIcon" class="return" onclick="returnToAllModal()">&lt;&dash;Return</span>
-                        <h2 id="ModalHeader">Modal Header</h2>
+                        <h2 id="ModalHeader" class="modal-header-text">Modal Header</h2>
                     </div>
                     <div class="modal-body">
+                        <div class="slides-text">
+                            <p>
+                                Select a picture to full screen it!
+                            </p>
+                        </div>
                         <div class="slideshow-container">
                             <div class="slides">
                                 <a id="ModalImage1Expand" href="assets/images/site_global/Custom404.png"
@@ -279,8 +284,8 @@
                                 </a>
                                 <iframe id="ModalVideo" class="videoModal"
                                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&rel=0"
-                                    webkitallowfullscreen="true" mozallowfullscreen="true"
-                                    allowfullscreen="true"></iframe>
+                                    webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true">
+                                </iframe>
                             </div>
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
