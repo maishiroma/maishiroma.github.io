@@ -503,7 +503,7 @@ header{
 .close {
     color: black;
     float: right;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -518,7 +518,7 @@ header{
 .return {
     color: black;
     float: left;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     display: none;
     margin-top: 15px;
@@ -537,7 +537,7 @@ header{
    .return {
         color: black;
         float: left;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         display: none;
         margin-top: 0px;
@@ -547,7 +547,7 @@ header{
    .close {
         color: black;
         float: right;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
    }
 
@@ -839,8 +839,6 @@ header{
 
 .moreDetails-icons {
     display: inline-block;
-    width: 40px;
-    height: 40px;
 }
 
 .address {
