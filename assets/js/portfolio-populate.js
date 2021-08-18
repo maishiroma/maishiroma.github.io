@@ -7,10 +7,6 @@ const showcaseLimit = 6;    // How many items can be shown on the front page
 /*
     Key:
         - id: the unique name of the item.
-        - type: what kind of post is this? Can be the following:
-            - gamePosts
-            - videoPosts
-            - writingPosts
         - frontPage:
             - isFeatured: is this item featured on the front page of the site?
             - orderOfFeature: if isFeatured is true, this determines the order in which this is placed in. The ordering is as follows: 
@@ -26,16 +22,15 @@ const showcaseLimit = 6;    // How many items can be shown on the front page
             - subtitle: A small clip summarizing what the clip is
 */
 const allPortfolioItems = {
-    "games": [
+    "gamePosts": [
         {
             "id": "WarePlai",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/games/WarePlai1.png",
+                "source": "assets/images/portfolio/gamePosts/WarePlai1.png",
                 "altText": "WarePlai Logo"
             },
             "caption": {
@@ -46,13 +41,12 @@ const allPortfolioItems = {
         },
         {
             "id": "ROC",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "2"
             },
             "image": {
-                "source": "assets/images/portfolio/games/ROC3.png",
+                "source": "assets/images/portfolio/gamePosts/ROC3.png",
                 "altText": "Reign Of Cthulhu Logo"
             },
             "caption": {
@@ -63,13 +57,12 @@ const allPortfolioItems = {
         },
         {
             "id": "Astrae",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "3"
             },
             "image": {
-                "source": "assets/images/portfolio/games/Astrae3.png",
+                "source": "assets/images/portfolio/gamePosts/Astrae3.png",
                 "altText": "Astrae Logo"
             },
             "caption": {
@@ -80,13 +73,12 @@ const allPortfolioItems = {
         },
         {
             "id": "BSEC",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "4"
             },
             "image": {
-                "source": "assets/images/portfolio/games/BSEC2.jpg",
+                "source": "assets/images/portfolio/gamePosts/BSEC2.jpg",
                 "altText": "Beyond Space Energy Corp Logo"
             },
             "caption": {
@@ -97,13 +89,12 @@ const allPortfolioItems = {
         },
         {
             "id": "ISD",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "5"
             },
             "image": {
-                "source": "assets/images/portfolio/games/ISD4.png",
+                "source": "assets/images/portfolio/gamePosts/ISD4.png",
                 "altText": "In Solo Duo Title Art"
             },
             "caption": {
@@ -114,13 +105,12 @@ const allPortfolioItems = {
         },
         {
             "id": "Reflections",
-            "type": "gamePosts",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "6"
             },
             "image": {
-                "source": "assets/images/portfolio/games/Reflections3.png",
+                "source": "assets/images/portfolio/gamePosts/Reflections3.png",
                 "altText": "Reflections Title Screen"
             },
             "caption": {
@@ -130,16 +120,15 @@ const allPortfolioItems = {
             }
         }
     ],
-    "videos": [
+    "videoPosts": [
         {
             "id": "NWIVideo1",
-            "type": "videoPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg",
+                "source": "assets/images/portfolio/videoPosts/NebulaworksWhiteboard1.jpg",
                 "altText": "NWI Whiteboard thumbnail",
                 "extLink": "https://www.youtube.com/watch?v=R_v4rnsbbIM"
             },
@@ -151,13 +140,12 @@ const allPortfolioItems = {
         },
         {
             "id": "NWIVideo2",
-            "type": "videoPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/videos/NebulaworksWhiteboard2.jpg",
+                "source": "assets/images/portfolio/videoPosts/NebulaworksWhiteboard2.jpg",
                 "altText": "NWI Whiteboard thumbnail",
                 "extLink": "https://www.youtube.com/watch?v=lzxYHHr6_cU"
             },
@@ -168,16 +156,15 @@ const allPortfolioItems = {
             }
         }
     ],
-    "articles": [
+    "articlePosts": [
         {
             "id": "NWIStdImg",
-            "type": "writingPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/writing/machineimage_blog.jpeg",
+                "source": "assets/images/portfolio/articlePosts/machineimage_blog.jpeg",
                 "altText": "NWI Article Image",
                 "extLink": "https://www.nebulaworks.com/insights/posts/three-essential-machine-image-creation-rules-to-utilize/"
             },
@@ -189,13 +176,12 @@ const allPortfolioItems = {
         },
         {
             "id": "NWITfUpgrade",
-            "type": "writingPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/writing/terraform_blog.jpg",
+                "source": "assets/images/portfolio/articlePosts/terraform_blog.jpg",
                 "altText": "NWI Article Image",
                 "extLink": "https://www.nebulaworks.com/insights/posts/upgrade-to-terraform-0-12-the-beginners-guide/"
             },
@@ -207,13 +193,12 @@ const allPortfolioItems = {
         },
         {
             "id": "NWIGKEVol",
-            "type": "writingPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/writing/gke_blog.jpg",
+                "source": "assets/images/portfolio/articlePosts/gke_blog.jpg",
                 "altText": "NWI Article Image",
                 "extLink": "https://www.nebulaworks.com/insights/posts/leveraging-aws-ebs-for-kubernetes-persistent-volumes/"
             },
@@ -224,14 +209,98 @@ const allPortfolioItems = {
             }
         },
         {
-            "id": "TSGNews1",
-            "type": "writingPosts",
+            "id": "TSGReflection",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/writing/VAStrike.jpg",
+                "source": "assets/images/portfolio/articlePosts/Reflection.jpg",
+                "altText": "TSG Reflection Article",
+                "extLink": "http://topshelfgaming.net/first-competitive-gaming-experience/"
+            },
+            "caption": {
+                "title": "TSG Reflection Article",
+                "location": "TopShelfGaming",
+                "subtitle": "A personal recollection of participating in a major Super Smash Brothers Wii U Tournament",
+            }
+        },
+        {
+            "id": "TSGReview",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/articlePosts/Review.png",
+                "altText": "TSG Video Game Review Article",
+                "extLink": "http://topshelfgaming.net/strategy-power-fire-emblem-warriors/"
+            },
+            "caption": {
+                "title": "TSG Video Game Review Article",
+                "location": "TopShelfGaming",
+                "subtitle": "A brief, but detailed review on the Fire Emblem Warriors game, released on the Nintendo Switch",
+            }
+        },
+        {
+            "id": "TSGInterview",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/articlePosts/Interview.png",
+                "altText": "TSG Interview Article",
+                "extLink": "assets/images/portfolio/articlePosts/Interview.png"
+            },
+            "caption": {
+                "title": "TSG Interview Article",
+                "location": "TopShelfGaming",
+                "subtitle": "An exclusive interview with Florenct Maurin on his indie title, Bury Me, My Love",
+            }
+        },
+        {
+            "id": "TSGOpinon",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/articlePosts/Opinion.png",
+                "altText": "TSG Opinion Article",
+                "extLink": "http://topshelfgaming.net/a-hopeless-boss-fight-is-a-good-idea/"
+            },
+            "caption": {
+                "title": "TSG Opinion Article",
+                "location": "TopShelfGaming",
+                "subtitle": "An opinionated look at the video game trope of an Impossible Boss Fight",
+            }
+        },
+        {
+            "id": "TSGFeature",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/articlePosts/Feature.png",
+                "altText": "TSG Feature Article",
+                "extLink": "http://topshelfgaming.net/motivation-play-game-story/"
+            },
+            "caption": {
+                "title": "TSG Feature Article",
+                "location": "TopShelfGaming",
+                "subtitle": "A deep dive in how video games convince players to experience its story",
+            }
+        },
+        {
+            "id": "TSGNews1",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/articlePosts/VAStrike.jpg",
                 "altText": "TSG News Article",
                 "extLink": "http://topshelfgaming.net/voice-acting-rights/"
             },
@@ -243,13 +312,12 @@ const allPortfolioItems = {
         },
         {
             "id": "TSGNews2",
-            "type": "writingPosts",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/writing/WiiShopChannel.jpg",
+                "source": "assets/images/portfolio/articlePosts/WiiShopChannel.jpg",
                 "altText": "TSG News Article",
                 "extLink": "http://topshelfgaming.net/wii-shop-channel-will-close-2019/"
             },
@@ -260,203 +328,90 @@ const allPortfolioItems = {
             }
         },
         {
-            "id": "",
-            "type": "",
+            "id": "TSGNews3",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
+                "source": "assets/images/portfolio/articlePosts/Tamagotchi.jpg",
+                "altText": "TSG News Article",
+                "extLink": "http://topshelfgaming.net/tamagotchi-anniversary-revives-its-iconic-toy/"
             },
             "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
+                "title": "TSG News: Tamagatchi's 20th Anniversary",
+                "location": "TopShelfGaming",
+                "subtitle": "Discusses the limited release of the Tamagatchi 20th Anniversary toy",
             }
         },
         {
-            "id": "",
-            "type": "",
+            "id": "TSGNews4",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
+                "source": "assets/images/portfolio/articlePosts/NaughtyDog.jpg",
+                "altText": "TSG News Article",
+                "extLink": "http://topshelfgaming.net/former-naughty-dog-employee-speaks-sexual-harassment/"
             },
             "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
+                "title": "TSG News: Naughty Dog Employee Speaks out on Sexual Harrassment",
+                "location": "TopShelfGaming",
+                "subtitle": "Some insight on a disturbing incident that a formel Naughty Dog employee disclosed",
             }
         },
         {
-            "id": "",
-            "type": "",
+            "id": "TSGNews5",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
+                "source": "assets/images/portfolio/articlePosts/AnimalCrossingPocketCamp.png",
+                "altText": "TSG News Article",
+                "extLink": "http://topshelfgaming.net/nintendo-announces-animal-crossing-pocket-camp-their-next-major-mobile-title/"
             },
             "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
+                "title": "TSG News: Animal Crossing Pocket Camp Reveal",
+                "location": "TopShelfGaming",
+                "subtitle": "A quick preview at the latest Nintendo mobile game, Animal Crossing Pocket Camp",
             }
         },
         {
-            "id": "",
-            "type": "",
+            "id": "TSGNews6",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
+                "source": "assets/images/portfolio/articlePosts/XBoxKinect.png",
+                "altText": "TSG News Article",
+                "extLink": "http://topshelfgaming.net/microsoft-stops-manufacturing-the-kinect/"
             },
             "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
+                "title": "TSG News: The Discontinuation of the XBox Kinect",
+                "location": "TopShelfGaming",
+                "subtitle": "A brief look on Microsoft's plans for the Kinect",
             }
         },
         {
-            "id": "",
-            "type": "",
+            "id": "TSGNews7",
             "frontPage": {
                 "isFeatured": "false",
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
+                "source": "assets/images/portfolio/articlePosts/PlayStationTrophies.jpg",
+                "altText": "TSG News Article",
+                "extLink": "http://topshelfgaming.net/playstation-trophies-can-now-exchanged-reward-points/"
             },
             "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
+                "title": "TSG News: PlayStation Trophies and Digital Points",
+                "location": "TopShelfGaming",
+                "subtitle": "Discussed about how achievements can be converted to rewards in the PlayStation Store",
             }
         },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        },
-        {
-            "id": "",
-            "type": "",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
-            },
-            "image": {
-                "source": "",
-                "altText": "",
-                "extLink": ""
-            },
-            "caption": {
-                "title": "",
-                "location": "",
-                "subtitle": "",
-            }
-        }
     ]
 }
 
@@ -468,13 +423,13 @@ var allModalElement = document.getElementById("allModalContent")
 // Helper Functions
 
 // Returns a formatted HTML string that represents a featured item
-function returnFeaturedPostString(dataBlob) {
+function returnFeaturedPostString(dataBlob, postType) {
     // The end result should look like the following:
     /*
         <div class="col-md-4 col-sm-6 col-xs-12 item-space">
             <figure>
                 <a onclick="expandPreview('WarePlai','gamePosts')"><img class="imagePreview"
-                    src="assets/images/portfolio/games/WarePlai1.png" alt="WarePlai Logo"></a>
+                    src="assets/images/portfolio/gamePosts/WarePlai1.png" alt="WarePlai Logo"></a>
                     <figcaption>
                         <h3>Contract Programmer</h3>
                         <span>@ WarePlai LLC</span>
@@ -484,7 +439,7 @@ function returnFeaturedPostString(dataBlob) {
         </div>
     */
 
-    var linkClickHTML = "onclick=\"expandPreview(\'" + dataBlob["id"] + "\', \'" + dataBlob["type"] + "\')\"";
+    var linkClickHTML = "onclick=\"expandPreview(\'" + dataBlob["id"] + "\', \'" + postType + "\')\"";
 
     var textHTML = "<h3>" + dataBlob["caption"]["title"] + "</h3><span>@" + dataBlob["caption"]["location"] + "</span>";
     var textLinkHTML = "<a class=\"button\" " + linkClickHTML + ">Take a Look!</a>";
@@ -498,37 +453,37 @@ function returnFeaturedPostString(dataBlob) {
 
 // Returns a formatted HTML string to represent a formatted allModalNode
 // This will create a node that expands into a new preview text of said content
-function returnAllModalNodeStandardString(dataBlob, listName) {
+function returnAllModalNodeStandardString(dataBlob, postType) {
     // The end result should look like this:
     /*
-    <div class="column games">
+    <div class="column gamePosts">
         <div class="content">
             <img class="allModalImage" onclick="bringUpNewPreview('WarePlai', 'gamePosts')"
-                src="assets/images/portfolio/games/WarePlai1.png" alt="WarePlai Logo">
+                src="assets/images/portfolio/gamePosts/WarePlai1.png" alt="WarePlai Logo">
             <h4>Contract Programmer</h4>
             <p>Sparked the creation of an in-house prototype.</p>
         </div>
     </div>
     */
-    var linkHTML = "onclick=\"bringUpNewPreview(\'" + dataBlob["id"] + "\', \'" + dataBlob["type"] + "\')\"";
+    var linkHTML = "onclick=\"bringUpNewPreview(\'" + dataBlob["id"] + "\', \'" + postType + "\')\"";
 
     var imgHTML = "<img class=\"allModalImage\"" + linkHTML + " src=\"" + dataBlob["image"]["source"] + "\" alt=\"" + dataBlob["image"]["altText"] + "\">";
     var textHTML = "<h4>" + dataBlob["caption"]["title"] + "</h4>" + "<p>" + dataBlob["caption"]["subtitle"] + "</p>";
 
     var innerContentHTML = "<div class=\"content\">" + imgHTML + textHTML + "</div>"
-    return "<div class=\"column " + listName + "\">" + innerContentHTML + "</div>"
+    return "<div class=\"column " + postType + "\">" + innerContentHTML + "</div>"
 }
 
 // Returns a formatted HTML string to represent a formatted allModalNode
 // This one created an external link to another site
-function returnAllModalNodeLinkString(dataBlob, listName) {
+function returnAllModalNodeLinkString(dataBlob, postType) {
     // The result of this will look like this:
     /*
-    <div class="column videos">
+    <div class="column videoPosts">
         <div class="content">
             <a href="https://www.youtube.com/watch?v=R_v4rnsbbIM" target="_blank"><img
                     class="allModalImage"
-                    src="assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg" alt=""></a>
+                    src="assets/images/portfolio/videoPosts/NebulaworksWhiteboard1.jpg" alt=""></a>
             <h4>Nebulaworks Whiteboarding: Three things to keep in mind when using Azure DevOps
                 Pipelines
                 Mesh</h4>
@@ -543,7 +498,7 @@ function returnAllModalNodeLinkString(dataBlob, listName) {
     var textHTML = "<h4>" + dataBlob["caption"]["title"] + "</h4><p>" + dataBlob["caption"]["subtitle"] + "</p>";
 
     var innerContentHTML = "<div class=\"content\">" + linkHTML + textHTML + "</div>"
-    return "<div class=\"column " + listName + "\">" + innerContentHTML + "</div>"
+    return "<div class=\"column " + postType + "\">" + innerContentHTML + "</div>"
 }
 
 // Main Area
@@ -558,18 +513,18 @@ for (var currListName in allPortfolioItems) {
         if (currData["frontPage"]["isFeatured"] == "true") {
             var indexed = currData["frontPage"]["orderOfFeature"] - 1;
             if (indexed >= 0 && indexed < showcaseLimit) {
-                showcaseList[indexed] = returnFeaturedPostString(currData);
+                showcaseList[indexed] = returnFeaturedPostString(currData, currListName);
             }
         }
 
         // By default, everything is added to the allModalElement
         // Based on the type of list we are in, we return a different formatted string
         switch (currListName) {
-            case "videos":
-            case "articles":
+            case "videoPosts":
+            case "articlePosts":
                 allModalElement.innerHTML += returnAllModalNodeLinkString(currData, currListName);
                 break;
-            case "games":
+            case "gamePosts":
                 allModalElement.innerHTML += returnAllModalNodeStandardString(currData, currListName);
                 break;
         }

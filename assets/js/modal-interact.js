@@ -35,7 +35,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/WarePlai1.png",
+                    "line": "assets/images/portfolio/gamePosts/WarePlai1.png",
                     "style": "picture",
                     "subtitle": "Logo of Company"
                 },
@@ -51,7 +51,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/WarePlai2.png",
+                    "line": "assets/images/portfolio/gamePosts/WarePlai2.png",
                     "style": "picture",
                     "subtitle": "Unity 5 Logo"
                 },
@@ -68,7 +68,7 @@ const modalData = {
                     "style": "unordered"
                 },
                 {
-                    "line": "assets/images/portfolio/WarePlai3.png",
+                    "line": "assets/images/portfolio/gamePosts/WarePlai3.png",
                     "style": "picture",
                     "subtitle": "Photon AR Logo"
                 },
@@ -111,7 +111,7 @@ const modalData = {
                     "style": "ordered"
                 },
                 {
-                    "line": "assets/images/portfolio/ROC2.png",
+                    "line": "assets/images/portfolio/gamePosts/ROC2.png",
                     "style": "picture",
                     "subtitle": "Screenshot of models and NPC"
                 },
@@ -149,7 +149,7 @@ const modalData = {
                     "style": "unordered"
                 },
                 {
-                    "line": "assets/images/portfolio/ROC1.png",
+                    "line": "assets/images/portfolio/gamePosts/ROC1.png",
                     "style": "picture",
                     "subtitle": "Screenshot of AR Video in App"
                 },
@@ -214,7 +214,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/ISD1.png",
+                    "line": "assets/images/portfolio/gamePosts/ISD1.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the first world, while playing as the male character"
                 },
@@ -237,7 +237,7 @@ const modalData = {
                     "style": "unordered",
                 },
                 {
-                    "line": "assets/images/portfolio/ISD2.png",
+                    "line": "assets/images/portfolio/gamePosts/ISD2.png",
                     "style": "picture",
                     "subtitle": "Screenshot of one of the later worlds, showcasing simple puzzle solving"
                 },
@@ -281,7 +281,7 @@ const modalData = {
                     "style": "ordered",
                 },
                 {
-                    "line": "assets/images/portfolio/ISD3.png",
+                    "line": "assets/images/portfolio/gamePosts/ISD3.png",
                     "style": "picture",
                     "subtitle": "Screenshot of a door that moves the player to the next level"
                 },
@@ -308,7 +308,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/Reflections3.png",
+                    "line": "assets/images/portfolio/gamePosts/Reflections3.png",
                     "style": "picture",
                     "subtitle": "Title Screen of game"
                 },
@@ -323,7 +323,7 @@ const modalData = {
                     "style": "ordered",
                 },
                 {
-                    "line": "assets/images/portfolio/Reflections2.png",
+                    "line": "assets/images/portfolio/gamePosts/Reflections2.png",
                     "style": "picture",
                     "subtitle": "Scene of a room in the game, where a player has to solve a simple puzzle"
                 },
@@ -342,7 +342,7 @@ const modalData = {
                     "style": "unordered",
                 },
                 {
-                    "line": "assets/images/portfolio/Reflections1.png",
+                    "line": "assets/images/portfolio/gamePosts/Reflections1.png",
                     "style": "picture",
                     "subtitle": "The main hub of the game, where multiple doors lead to different rooms"
                 },
@@ -410,7 +410,7 @@ const modalData = {
                     "style": "ordered",
                 },
                 {
-                    "line": "assets/images/portfolio/Astrae1.png",
+                    "line": "assets/images/portfolio/gamePosts/Astrae1.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the parkour system in the game, a central gameplay element."
                 },
@@ -469,7 +469,7 @@ const modalData = {
                     "style": "ordered",
                 },
                 {
-                    "line": "assets/images/portfolio/Astrae2.png",
+                    "line": "assets/images/portfolio/gamePosts/Astrae2.png",
                     "style": "picture",
                     "subtitle": "Screenshot of one of the many enemies in the game."
                 },
@@ -506,7 +506,7 @@ const modalData = {
                     "style": "block",
                 },
                 {
-                    "line": "assets/images/portfolio/BSEC3.png",
+                    "line": "assets/images/portfolio/gamePosts/BSEC3.png",
                     "style": "picture",
                     "subtitle": "Picture of gameplay, where the helper robot is seen scanning rocks."
                 },
@@ -519,7 +519,7 @@ const modalData = {
                     "style": "ordered",
                 },
                 {
-                    "line": "assets/images/portfolio/BSEC1.png",
+                    "line": "assets/images/portfolio/gamePosts/BSEC1.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the interior of the spaceship, the hub."
                 },
@@ -538,8 +538,7 @@ const modalData = {
                 }
             ]
         },
-    ],
-    "videoPosts": []
+    ]
 }
 
 // General Variables for the script
@@ -922,13 +921,13 @@ function filterSelection(element, criteria) {
     }
 
     switch (criteria) {
-        case "games":
+        case "gamePosts":
             allModalHeader.innerHTML = "Games";
             break;
-        case "videos":
+        case "videoPosts":
             allModalHeader.innerHTML = "Videos";
             break;
-        case "articles":
+        case "articlePosts":
             allModalHeader.innerHTML = "Articles";
             break;
         default:
