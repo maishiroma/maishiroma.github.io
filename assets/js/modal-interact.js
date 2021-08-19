@@ -18,6 +18,9 @@
                     - subtitle: additional text 
                 - video: (line param is YouTube URL)
                     - subtitle: additional text
+                - link: (line param holds the following at each index)
+                    - index 0 = Display Text
+                    - index 1 = location of link
 */
 
 // Constants
@@ -72,7 +75,7 @@ const modalData = {
                 {
                     "line": ["During the duration of this project, I worked closely with professional artists, placing their assets into the game, making sure the model, animations, and textures are properly imported."],
                     "style": "block"
-                }
+                },
             ],
         },
         {
@@ -180,6 +183,26 @@ const modalData = {
                         "We discussed accomplished tasks, clarified on issues that arose. For communication, we used Asana and Discord to bridge the interns and supervisors together."
                     ],
                     "style": "block",
+                },
+                {
+                    "line": [
+                        "External Links:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Kickstarter Page",
+                        "https://www.kickstarter.com/projects/bloodofcthulhu/first-ever-ar-native-game/description"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "App Store Link",
+                        "https://apps.apple.com/us/app/roc-comic/id1375347317"
+                    ],
+                    "style": "link"
                 }
             ]
         },
@@ -261,6 +284,19 @@ const modalData = {
                     "line": "assets/images/portfolio/ISD3.png",
                     "style": "picture",
                     "subtitle": "Screenshot of a door that moves the player to the next level"
+                },
+                {
+                    "line": [
+                        "External Links:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Code",
+                        "https://github.com/maishiroma/Project_InSoloDuo"
+                    ],
+                    "style": "link"
                 }
             ]
         },
@@ -310,6 +346,19 @@ const modalData = {
                     "style": "picture",
                     "subtitle": "The main hub of the game, where multiple doors lead to different rooms"
                 },
+                {
+                    "line": [
+                        "External Links:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Code",
+                        "https://github.com/maishiroma/cpsc344Project"
+                    ],
+                    "style": "link"
+                }
             ]
         },
         {
@@ -474,6 +523,19 @@ const modalData = {
                     "style": "picture",
                     "subtitle": "Screenshot of the interior of the spaceship, the hub."
                 },
+                {
+                    "line": [
+                        "External Links:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Code",
+                        "https://github.com/maishiroma/CPSC440GameProject"
+                    ],
+                    "style": "link"
+                }
             ]
         },
     ],
@@ -607,6 +669,26 @@ function returnVideoString(videoSource, subtitleText, mediaCount) {
     return "<div>" + preVideoImage + videoHTML + subtitleHTML + "</div>";
 }
 
+// Returns a formatted string used to represent a link
+// Note that this treats a link as a list item.
+function returnLinkString(displayText, linkLocation) {
+    // Resulting link format
+    /*
+        <li>
+            <a href="https://www.kickstarter.com/projects/bloodofcthulhu/first-ever-ar-native-game/description" target="_blank">
+                KickStarter Content
+            </a>
+            <span><i class="pe-7s-left-arrow"></i></span>
+        </li>
+    
+    */
+
+    iconHTML = "<span><i class=\"pe-7s-link\"></i></span>"
+    linkHTML = "<a href=\"" + linkLocation + "\"target=\"_blank\">" + displayText + "</a>";
+
+    return "<li>" + linkHTML + " " + iconHTML + "</li>";
+}
+
 // Returns a formatted string that can be used to easily format a modal's body text
 function returnModalBody(bodyData) {
     var resultString = "";  // The complete HTML string that was generated
@@ -696,6 +778,17 @@ function returnModalBody(bodyData) {
                 for (lineIndex = 0; lineIndex < currContent.length; lineIndex++) {
                     resultString += "<li>" + "<p>" + currContent[lineIndex] + "</p>" + "</li>";
                 }
+                break;
+            case "link":
+                if (listStack.length == 0) {
+                    // We always put these in some form of list and if it is not in one,
+                    // we default to an unordered list
+                    listStack.push("</ul>");
+                    resultString += "<ul>";
+                }
+
+                // We create a links string based on the contents of the data block
+                resultString += returnLinkString(currContent[0], currContent[1]);
                 break;
             default:
                 resultString += "<p>Unknown Type!</p>";
@@ -834,6 +927,9 @@ function filterSelection(element, criteria) {
             break;
         case "videos":
             allModalHeader.innerHTML = "Videos";
+            break;
+        case "articles":
+            allModalHeader.innerHTML = "Articles";
             break;
         default:
             allModalHeader.innerHTML = "All Items";

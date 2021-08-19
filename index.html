@@ -130,6 +130,8 @@
         <div class="container" style="white-space:nowrap">
             <h2 class="block_title"> Blog Updates</h2>
             <div class="row port cs-style-3">
+
+                <!-- This section will contain at most 2 blog posts, usually showing the latest ones -->
                 <div class="col-md-4 col-sm-6 col-xs-12 item-space">
                     <figure>
                         <a href="blog/Apr_21_2021.html">
@@ -171,76 +173,8 @@
         <div class="container">
             <h2 class="block_title">My Portfolio</h2>
             <div class="row port cs-style-3">
-
-                <!--- These are the six projects that I want to showcase the most -->
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('WarePlai','gamePosts')"><img class="imagePreview"
-                                src="assets/images/portfolio/WarePlai1.png" alt="WarePlai Logo"></a>
-                        <figcaption>
-                            <h3>Contract Programmer</h3>
-                            <span>@ WarePlai LLC</span>
-                            <a class="button" onclick="expandPreview('WarePlai','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('ROC','gamePosts')"><img class="imagePreview"
-                                src="assets/images/portfolio/ROC3.png" alt="Reign Of Cthulhu Logo"></a>
-                        <figcaption>
-                            <h3>R&D Intern</h3>
-                            <span>@ Arvada Labs</span>
-                            <a class="button" onclick="expandPreview('ROC','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('Astrae','gamePosts')"><img class="imagePreview"
-                                src="assets/images/portfolio/Astrae3.png" alt="Astrae Logo"></a>
-                        <figcaption>
-                            <h3>Lead Programmer</h3>
-                            <span>@ LCAD</span>
-                            <a class="button" onclick="expandPreview('Astrae','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('BSEC','gamePosts')"><img class="imagePreview"
-                                src="assets/images/portfolio/BSEC2.jpg" alt="Beyond Space Energy Corp Logo"></a>
-                        <figcaption>
-                            <h3>Assistant Programmer</h3>
-                            <span>@ Chapman University</span>
-                            <a class="button" onclick="expandPreview('BSEC','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('ISD','gamePosts')">
-                            <img class="imagePreview" src="assets/images/portfolio/ISD4.png" alt="In Solor Duo Logo">
-                        </a>
-                        <figcaption>
-                            <h3>Solo Project</h3>
-                            <span>Indie Project</span>
-                            <a class="button" onclick="expandPreview('ISD','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 item-space">
-                    <figure>
-                        <a onclick="expandPreview('Reflections','gamePosts')">
-                            <img class="imagePreview" src="assets/images/portfolio/Reflections3.png"
-                                alt="Reflections Title Page">
-                        </a>
-                        <figcaption>
-                            <h3>Lead Programmer</h3>
-                            <span>Chapman University</span>
-                            <a class="button" onclick="expandPreview('Reflections','gamePosts')">Take a look!</a>
-                        </figcaption>
-                    </figure>
+                <div id="portfolioFeatured">
+                    <!--- This section will be populated dynamically via a script, called in JS -->
                 </div>
                 <div class="col-xs-12">
                     <div class="btn-center">
@@ -283,86 +217,12 @@
                             <button class="btn_All active" onclick="filterSelection(this,'all')"> All</button>
                             <button class="btn_All" onclick="filterSelection(this,'games')"> Games</button>
                             <button class="btn_All" onclick="filterSelection(this,'videos')"> Videos</button>
+                            <button class="btn_All" onclick="filterSelection(this,'articles')"> Articles</button>
                         </div>
                         <div id="allModalContent" class="row_allContentModal">
 
-                            <!-- Game Projects -->
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('WarePlai', 'gamePosts')"
-                                        src="assets/images/portfolio/WarePlai1.png" alt="WarePlai Logo">
-                                    <h4>Contract Programmer</h4>
-                                    <p>Sparked the creation of an in-house prototype.</p>
-                                </div>
-                            </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('ROC', 'gamePosts')"
-                                        src="assets/images/portfolio/ROC3.png" alt="Reign Of Cthulhu Pic">
-                                    <h4>Arvada Labs</h4>
-                                    <p>As a R&D intern, facilitated the creation of a companion app for this game's
-                                        Kickstarter.</p>
-                                </div>
-                            </div>
+                            <!--- This section will be populated dynamically via a script, called in JS -->
 
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Astrae', 'gamePosts')"
-                                        src="assets/images/portfolio/Astrae3.png" alt="Astrae Game Pic">
-                                    <h4>Astrae</h4>
-                                    <p>Lead programmer for this LCAD graduate's thesis project, created in Unity 5.</p>
-                                </div>
-                            </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('BSEC', 'gamePosts')"
-                                        src="assets/images/portfolio/BSEC2.jpg" alt="Beyond Space Energy Corp Game Pic">
-                                    <h4>Beyond Space Energy Corp</h4>
-                                    <p>Assisitant programmer for a Unity 5 mobile VR game, made for a Chapman
-                                        University's senior thesis.</p>
-                                </div>
-                            </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('ISD', 'gamePosts')"
-                                        src="assets/images/portfolio/ISD4.png" alt="In Solo Duo Game Pic">
-                                    <h4>In Solo Duo</h4>
-                                    <p>An independent venture done in GameMaker, picked off from the final project done
-                                        at Summer@USC in 2013.</p>
-                                </div>
-                            </div>
-                            <div class="column games">
-                                <div class="content">
-                                    <img class="allModalImage" onclick="bringUpNewPreview('Reflections', 'gamePosts')"
-                                        src="assets/images/portfolio/Reflections3.png" alt="Reflection Game Pic">
-                                    <h4>Reflections</h4>
-                                    <p>A Chapman University group project done in Unity 5, contributing as Lead
-                                        Programmer.</p>
-                                </div>
-                            </div>
-
-                            <!--Professional Video Content-->
-                            <div class="column videos">
-                                <div class="content">
-                                    <a href="https://www.youtube.com/watch?v=R_v4rnsbbIM" target="_blank"><img
-                                            class="allModalImage"
-                                            src="assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg" alt=""></a>
-                                    <h4>Nebulaworks Whiteboarding: Three things to keep in mind when using Azure DevOps
-                                        Pipelines
-                                        Mesh</h4>
-                                    <p>An overview of how to utilize Azure Dev Ops Pipelines to its fullest extent</p>
-                                </div>
-                            </div>
-                            <div class="column videos">
-                                <div class="content">
-                                    <a href="https://www.youtube.com/watch?v=lzxYHHr6_cU" target="_blank"><img
-                                            class="allModalImage"
-                                            src="assets/images/portfolio/videos/NebulaworksWhiteboard1.jpg" alt=""></a>
-                                    <h4>Nebulaworks Whiteboarding: Three Things to Understand Before Using a Service
-                                        Mesh</h4>
-                                    <p>An overview of best practices when it comes to using Service Mesh tools</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -437,14 +297,17 @@
         </div>
     </footer>
 
-    <!-- Necessery scripts -->
+    <!-- Necessary scripts -->
     <script src="assets/js/jquery-2.1.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.actual.min.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <!-- Content scripts -->
     <script src="assets/js/modal-interact.js"></script>
+    <script src="assets/js/portfolio-populate.js"></script>
 
 </body>
 
