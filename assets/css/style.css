@@ -589,7 +589,7 @@ header{
      margin-left: 15px;
      margin-right: 15px;
      white-space: normal;
-     max-height: calc(70vh - 300px);
+     max-height: calc(70vh - 10px);
      overflow-y: auto;
      overflow-x: hidden;
      text-align: left;
@@ -653,8 +653,8 @@ header{
 .slides-text {
   color: #000;
   font-size: 15px;
-  position: block;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 /* Number text (1/3 etc) */
@@ -680,8 +680,15 @@ header{
 
 /* The image on the current slide */
 .slidesImage {
-     width: 30%;
-     height: 10%;
+    display: block;
+    width: initial;
+    height: initial;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .active, .dot:hover {
@@ -693,6 +700,10 @@ header{
      width: 40vw;
      height: 30vh;
      display: none;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10px;
+     margin-bottom: 10px;
 }
 
 .videoModalLoad {
