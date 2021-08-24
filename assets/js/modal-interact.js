@@ -27,6 +27,21 @@
 const listStackSize = 2;
 const modalData = {
     "gamePosts": [
+        /*
+        Template:
+        {
+            "id": "",
+            "header": {
+                "normal": "",
+                "italics": ""
+            },
+            "body": [
+                "line": [""],
+                "style": "",
+                "subtitle": ""
+            ],
+        },
+        */
         {
             "id": "WarePlai",
             "header": {
@@ -537,6 +552,250 @@ const modalData = {
                     "style": "link"
                 }
             ]
+        },
+        {
+            "id": "GameJam1",
+            "header": {
+                "normal": "Ludum Dare 47: Hunger Pains",
+                "italics": "(Oct 2 - Oct 5, 2020)"
+            },
+            "body": [
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_4.gif",
+                    "style": "picture",
+                    "subtitle": "Gameplay sample"
+                },
+                {
+                    "line": [
+                        "In my free time, I partook in my very first game jam, Ludum Dare. This is a bi-yearly game jam where you spend an entire weekend (72 hours) to complete a game made from scratch, based on a voted theme.",
+                        "In my first game jam, I decided to go solo, since I wanted to use the experience to better my own game development skills, especially in areas that I would like to get more experience with (i.e. art, game design)",
+                        "In the end, I took away many valuable lessons from this experience, ranging from game scope, artistic visions, and most importantly, concise gameplay."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "The theme of the game jam was, Stuck in a Loop. I interpreted this as being in a sushi conveyor belt restaurant, trying to survive the onslaught of hungry customers.",
+                        "Hence, the game I made is called Hunger Pains, a survival game where you have last as many rounds (pun intended) of chopsticks grabbing you.",
+                        "The gameplay is fairly basic, with movement in all directions, but because you are on a conveyor belt, you are limited in how much space you have to outmaneuver the main obstacle of the game, chopsticks."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_Design_3.png",
+                    "style": "picture",
+                    "subtitle": "Initial Brainstorm of the project, initially called Sushi Chef"
+                },
+                {
+                    "line": [
+                        "The initial design of the game focused centrally on the theme, designing the gameplay around it.",
+                        "The idea of people eating at a conveyor belt sushi restaurant set the stage up for some interesting gameplay challenges.",
+                        "This lead to a game design concept of a mini challenge round, where the player has to survive a random challenge that is thrown at them, in a series of rounds.",
+                        "Some of the round ideas that I had (which one ultimatly came through) were:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "A challenge where you sneak by people to avoid detection (the one that the game focused on)",
+                        "A challenge where the player has to choose to hide behind specific items, surviving a certain number of turns in that round before they can proceed (scrapped)",
+                        "A challenge where the player is 'caught', but attempts to resist getting captured, via a button mashing event (scrapped)"
+                    ],
+                    "style": "ordered"
+                },
+                {
+                    "line": [
+                        "I also wanted to do more with the conveyor belt gimmick itself, but due to time constraints, the only element that had the conveyor belt was the limited movement.",
+                        "Nevertheless, the decision to scrap these ideas helped led this project to completion, since time was the biggest challenge in this game jam."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_Design_2.png",
+                    "style": "picture",
+                    "subtitle": "Mock up of menus, UI flow, as well as a list of tasks to accomplish"
+                },
+                {
+                    "line": [
+                        "Speaking of time, I wanted to mock up all of the art for the game (UI and player) in advance so that I can focus my time on the gameplay mechanics. Hence, I created some rough diagrams of how I wanted the game screens to look like.",
+                        "I also organized my thoughts out on what needs to be done, prioritizing tasks as they came up.",
+                        "This especially came up on the last day where I had a lot of artwork that still needed to be done"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_Design_1.png",
+                    "style": "picture",
+                    "subtitle": "Concept art of player as well as task planning for 2nd and 3rd day of the jam"
+                },
+                {
+                    "line": [
+                        "My planning on these days along with getting the important tasks outlined played a large part in myself getting this game done to a completed state.",
+                        "While a lot of ideas had to get scrapped, I realized that sometimes, it is best to focus one's attention to what the game currently has to offer and refine it.",
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "The end result of the game was the following:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "A high score survival round based game",
+                        "Pseudo random obstacles in each round, with the difficulty (obstacle speed) increasing dynamically",
+                        "An atmosphere that brings back that old feeling of old school arcade games, in combination with the simple art style",
+                    ],
+                    "style": "unordered"
+                },
+                {
+                    "line": [
+                        "Overall, I enjoyed making this game, and despite having some cut content, I found myself pleased with the end results. Below I liked some external links that you can follow to see more information about the game, which includes its GitHub Repository, a post mortem, and a link to the game itself (it is playable in browser!)"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_2.png",
+                    "style": "picture",
+                    "subtitle": "Cutscene leading to the next stage"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD47_3.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of the main gameplay loop"
+                },
+                {
+                    "line": ["References"],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Control",
+                        "https://github.com/maishiroma/LudumDare_47"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Itch.io Page",
+                        "https://kaabiikaze.itch.io/hunger-pains"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Ludum Dare Page",
+                        "https://ldjam.com/events/ludum-dare/47/hunger-pains"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Post Mortem External Blog Post",
+                        "https://ldjam.com/events/ludum-dare/47/hunger-pains/hunger-pains-post-mortem"
+                    ],
+                    "style": "link"
+                }
+            ],
+        },
+        {
+            "id": "GameJam2",
+            "header": {
+                "normal": "Mix and Jam 2020: Blocker Blunders",
+                "italics": "(Nov 13 - Nov 15 2020)"
+            },
+            "body": [
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_4.gif",
+                    "style": "picture",
+                    "subtitle": "Gameplay Demo"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_3.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of some platforming"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_2.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of the puzzle mechanic"
+                },
+                {
+                    "line": ["References"],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Control",
+                        "https://github.com/maishiroma/MixAndJam_2020"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Itch.io Page",
+                        "https://kaabiikaze.itch.io/blocker-blunders"
+                    ],
+                    "style": "link"
+                },
+            ],
+        },
+        {
+            "id": "GameJam3",
+            "header": {
+                "normal": "Ludum Dare 48: Sky Plummet",
+                "italics": "(Apr 23 - Apr 25 2021)"
+            },
+            "body": [
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD48_5.gif",
+                    "style": "picture",
+                    "subtitle": "Gameplay Demo"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD48_3.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of second area of game"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD48_4.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of third area of game"
+                },
+                {
+                    "line": ["References"],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Source Control",
+                        "https://github.com/maishiroma/LudumDare_48"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Itch.io Page",
+                        "https://kaabiikaze.itch.io/sky-plummet"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Ludum Dare Page",
+                        "https://ldjam.com/events/ludum-dare/48/sky-plummet-my-compo-ludum-dare-48-entry"
+                    ],
+                    "style": "link"
+                },
+                {
+                    "line": [
+                        "Post Mortem External Blog Post",
+                        "https://ldjam.com/events/ludum-dare/48/sky-plummet-my-compo-ludum-dare-48-entry/sky-plummet-post-mortem"
+                    ],
+                    "style": "link"
+                }
+            ],
         },
     ]
 }

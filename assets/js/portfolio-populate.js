@@ -23,6 +23,25 @@ const showcaseLimit = 6;    // How many items can be shown on the front page
 */
 const allPortfolioItems = {
     "gamePosts": [
+        /*
+        Template: 
+        {
+            "id": "",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "",
+                "altText": ""
+            },
+            "caption": {
+                "title": "",
+                "location": "",
+                "subtitle": "",
+            }
+        },
+        */
         {
             "id": "WarePlai",
             "frontPage": {
@@ -118,9 +137,77 @@ const allPortfolioItems = {
                 "location": "Chapman University",
                 "subtitle": "Collaborated in a Chapman University group project in Unity 5 for a Level Design Class",
             }
+        },
+        {
+            "id": "GameJam1",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/gamePosts/LD47_1.png",
+                "altText": "Hunger Pains Title Screen"
+            },
+            "caption": {
+                "title": "Ludum Dare 47: Hunger Pains",
+                "location": "Indie",
+                "subtitle": "My first Game Jam entry where you survive an onslaught of hungry customers as a sentient sushi!",
+            }
+        },
+        {
+            "id": "GameJam2",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/gamePosts/MnJ2020_1.png",
+                "altText": "Mix and Jam 2020: Blocker Blunders"
+            },
+            "caption": {
+                "title": "Mix and Jam 2020: Blocker Blunders",
+                "location": "Indie",
+                "subtitle": "Second Game Jam where you use your magical powers to create platforms and escape the forest!",
+            }
+        },
+        {
+            "id": "GameJam3",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/gamePosts/LD48_1.png",
+                "altText": "Ludum Date 48: Sky Plummet"
+            },
+            "caption": {
+                "title": "Ludum Dare 48: Sky Plummet",
+                "location": "Indie",
+                "subtitle": "How long can you divebomb for gold?",
+            }
         }
     ],
     "videoPosts": [
+        /*
+        Template:
+        {
+            "id": "",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "",
+                "altText": "",
+                "extLink": ""
+            },
+            "caption": {
+                "title": "",
+                "location": "",
+                "subtitle": "",
+            }
+        },
+        */
         {
             "id": "NWIVideo1",
             "frontPage": {
@@ -157,6 +244,26 @@ const allPortfolioItems = {
         }
     ],
     "articlePosts": [
+        /*
+        Template:
+        {
+            "id": "",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "",
+                "altText": "",
+                "extLink": ""
+            },
+            "caption": {
+                "title": "",
+                "location": "",
+                "subtitle": "",
+            }
+        },
+        */
         {
             "id": "NWIStdImg",
             "frontPage": {
@@ -510,7 +617,7 @@ for (var currListName in allPortfolioItems) {
 
         // If the post we labeled is featured, we add it to the featured list
         // Depending on the orderOfFeature, it will be showcased later in the site
-        if (currData["frontPage"]["isFeatured"] == "true") {
+        if (currData["frontPage"] != null && currData["frontPage"]["isFeatured"] == "true") {
             var indexed = currData["frontPage"]["orderOfFeature"] - 1;
             if (indexed >= 0 && indexed < showcaseLimit) {
                 showcaseList[indexed] = returnFeaturedPostString(currData, currListName);
