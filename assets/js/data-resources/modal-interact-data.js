@@ -709,14 +709,113 @@ const modalData = {
                     "subtitle": "Gameplay Demo"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_3.png",
-                    "style": "picture",
-                    "subtitle": "Screenshot of some platforming"
+                    "line": [
+                        "Coming from my first Game Jam with a good hit, I wanted to continue the drive of partaking in more game jams in the year.",
+                        "As such, I signed up for the next Game Jam I had an available weekend: Mix and Jam 2020.",
+                        "The theme of this game jam is to mix up two generes that normally do not go together and come up with a solid game in 48 hours.",
+                        "I was excited to see how this will play out, so I started right away, with the end product called Blocker Blunders."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Blocker Blunders is a falling block puzzle game (akin to Tetris) turned into a 2D platformer.",
+                        "In other words, the goal of the game is to create a bridge of blocks formed via placing blocks strategically, jumping and maneuvering the levels.",
+                        "I was inspired by the recent surge of puzzle games in the market at the time, specifically Tetris 99 and Puyo Puyo Tetris, but also wanted to flesh out a genre that I really enjoy playing, which are platformers.",
+                    ],
+                    "style": "block"
                 },
                 {
                     "line": "assets/images/portfolio/gamePosts/MnJ2020_2.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the puzzle mechanic"
+                },
+                {
+                    "line": [
+                        "Like the first game jam, I decided to go solo on this project as well, since I wanted to apply my lessons learned from the first game jam",
+                        "Planning out the project was actually the easiest part of the project, since I got to my core idea rather fast."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_Design_2.png",
+                    "style": "picture",
+                    "subtitle": "Initial brainstorming component"
+                },
+                {
+                    "line": [
+                        "My other idea I had was:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "A resource management game, turned into a survival horror genre where the player has to work at a restaurant, serving up food to rabid paparazzi."
+                    ],
+                    "style": "unordered"
+                },
+                {
+                    "line": [
+                        "This would have been fairly challenging to implement as a single developer, since this requires both a decent AI as well as a game system of acquiring resources.",
+                        "Plus, there would have to be some form of game balancing, UI indicators and a game loop that might balloon up the scope of the project.",
+                        "Hence, I scrapped this idea and went with my second idea (the platformer puzzle style), but one day, I would like to revisit this concept."
+                    ],
+                    "style": "unordered"
+                },
+                {
+                    "line": [
+                        "Once I got the idea down, I approached the project the same way as last time: outlining what needs to be done and in what order.",
+                        "The big mechanic I had to work on was the seamless transition between the platforming part and the puzzle aspect of the game.",
+                        "This alone took a lot longer than I imagined, which ended up costing me some time in level design and/or scrapping some additional content."
+                    ],
+                    "style": "block",
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_Design_1.png",
+                    "style": "picture",
+                    "subtitle": "Day 2 of what needed to be done"
+                },
+                {
+                    "line": [
+                        "While I did end up making it to the deadline, this project challenged me in the following aspects:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Always plan for the art at the start, even if it is a rough concept",
+                        "Be concise with the game mechanics so that scope creep won't happen as easily",
+                        "Level Design earlier in the process, it saves time to build levels near the end"
+                    ],
+                    "style": "ordered"
+                },
+                {
+                    "line": [
+                        "One aspect that I am particularly proud of was how I made use of tilesets in Unity to build the levels.",
+                        "Since I was on a time crunch near the end, I needed a fast way to design levels for the player to play on.",
+                        "This is where I decided on using tilesets to build my levels and this saved me immense time to playtest the game right before the deadline arrived.",
+                        "It also helped make my levels look seamless despite being very simplistic."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/MnJ2020_3.png",
+                    "style": "picture",
+                    "subtitle": "Screenshot of some platforming"
+                },
+                {
+                    "line": [
+                        "While the finished project has some rough edges, I enjoyed the end product.",
+                        "It allowed me to really think more about project planning for game jams as well as consider what needs to get done.",
+                        "Plus it allowed me to work on some of my other skills as a game developer like art, level building, and UX design."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "The game is available to play on itch.io, so feel free to try out the game yourself!"
+                    ],
+                    "style": "block"
                 },
                 {
                     "line": ["References"],
@@ -742,13 +841,112 @@ const modalData = {
             "id": "GameJam3",
             "header": {
                 "normal": "Ludum Dare 48: Sky Plummet",
-                "italics": "(Apr 23 - Apr 25 2021)"
+                "italics": "(April 23 - April 25 2021)"
             },
             "body": [
                 {
                     "line": "assets/images/portfolio/gamePosts/LD48_5.gif",
                     "style": "picture",
                     "subtitle": "Gameplay Demo"
+                },
+                {
+                    "line": [
+                        "Ludum Dare 48's theme was about going deeper. When I heard of this theme, I immediately had a theme in mind about making an infinite scroller game.",
+                        "The main reason for this is that I have not made an infinite scroller in a long time, and I am curious to see how well I can attempt at the genre again.",
+                        "The end product I got was a 2D falling collect-a-thon game called Blocker Busters, and this was a project that I am especially proud of, with the execution, art direction, and room for growth.",
+                        "The big difference with this participation in Ludum Dare than the first time I partook was I decided to enter in the hard mode of the game jam. To summarize:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "One must work solo on the project",
+                        "All assets (art, code, music, UI) with a few exceptions must be made by yourself",
+                        "The deadline for this is 48 hours as opposed to 72 hours",
+                        "The code for the game must be in an open source repository"
+                    ],
+                    "style": "ordered"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD_48_Design_3.png",
+                    "style": "picture",
+                    "subtitle": "Initial concept page on Block Busters."
+                },
+                {
+                    "line": [
+                        "I first got the idea from a small inspiration point of playing Super Smash Brothers Ultimate as a character named Toon Link.",
+                        "Toon Link has a move in the game where one plunges downward, cutting through any opponent in your way.",
+                        "The feel of that attack was what led me to the concept of dive bombing downwards to dig through gold blocks",
+                        "This concept also opened the door up for some other gameplay elements that did not come into the game due to time constraints",
+                        "Some of these are:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "Random generated block structures to manurer around",
+                        "Some blocks allowing the player to bounce off of after dive bombing onto them, allowing for another movement option",
+                    ],
+                    "style": "unordered"
+                },
+                {
+                    "line": [
+                        "Nevertheless, the reduction of scope allowed me to put more time on getting the core gameplay loop finalized, which allowed myself to spend more time on the presentation.",
+                        "I got the core gameplay done in the first day, so the second day was all about making the art, music and UI of the game."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD_48_Design_1.png",
+                    "style": "picture",
+                    "subtitle": "Planning for Block Busters as well as some initial concept art of player"
+                },
+                {
+                    "line": [
+                        "One particular aspect I would like to address is the player character.",
+                        "The player character was something I wanted to make more fun and whimsical; it would represent the game when you look at it.",
+                        "I initially wanted to pay homage to my original concept and make a human sword fighter, but I realized that it would make the game less interesting.",
+                        "Then, I immediately thought of the game Dig Dug and I began to draw what is the player character for this game, a sentient cartoon drill robot."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD_48_Design_2.png",
+                    "style": "picture",
+                    "subtitle": "Concept art of player character"
+                },
+                {
+                    "line": [
+                        "One of the main reason besides the cartoon aspect that I went with this character choice is:"
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "It was made of basic shapes that can be easily changed and colored",
+                        "It distinguishes the scope of the world along with easily pointing out what the point of the game is",
+                        "It allowed for some fun animation loops (one of which is shown below)",
+                    ],
+                    "style": "unordered"
+                },
+                {
+                    "line": "assets/images/portfolio/gamePosts/LD48_6.gif",
+                    "style": "picture",
+                    "subtitle": "Blended animation loop of the player starting a new round"
+                },
+                {
+                    "line": [
+                        "I'm really happy with this animation because I wanted to experiment with animation trees and invoking scripts within an animation in Unity.",
+                        "This action solidified my understanding of the game logic that needed to happen in a game, which is a lesson I learned in previous projects, but haven't put into practice as lately."
+                    ],
+                    "style": "block"
+                },
+                {
+                    "line": [
+                        "My post mortem has more information on what else I enjoyed and what I wanted to improve on, go check it out in the Reference section!",
+                        "I also have links to play this game in itch.io as well as in the browser as well.",
+                    ],
+                    "style": "block"
                 },
                 {
                     "line": "assets/images/portfolio/gamePosts/LD48_3.png",

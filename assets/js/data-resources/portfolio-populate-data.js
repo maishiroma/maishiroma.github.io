@@ -104,49 +104,17 @@ const allPortfolioItems = {
             }
         },
         {
-            "id": "ISD",
-            "frontPage": {
-                "isFeatured": "true",
-                "orderOfFeature": "5"
-            },
-            "image": {
-                "source": "assets/images/portfolio/gamePosts/ISD4.png",
-                "altText": "In Solo Duo Title Art"
-            },
-            "caption": {
-                "title": "Solo Developer",
-                "location": "Independent Venture",
-                "subtitle": "Independently developed in GameMaker, picked off from a Summer@USC final project",
-            }
-        },
-        {
-            "id": "Reflections",
+            "id": "GameJam1",
             "frontPage": {
                 "isFeatured": "true",
                 "orderOfFeature": "6"
-            },
-            "image": {
-                "source": "assets/images/portfolio/gamePosts/Reflections3.png",
-                "altText": "Reflections Title Screen"
-            },
-            "caption": {
-                "title": "Lead Programmer",
-                "location": "Chapman University",
-                "subtitle": "Collaborated in a Chapman University group project in Unity 5 for a Level Design Class",
-            }
-        },
-        {
-            "id": "GameJam1",
-            "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
             },
             "image": {
                 "source": "assets/images/portfolio/gamePosts/LD47_1.png",
                 "altText": "Hunger Pains Title Screen"
             },
             "caption": {
-                "title": "Ludum Dare 47: Hunger Pains",
+                "title": "LD47: Hunger Pains",
                 "location": "Indie",
                 "subtitle": "My first Game Jam entry where you survive an onslaught of hungry customers as a sentient sushi!",
             }
@@ -162,25 +130,57 @@ const allPortfolioItems = {
                 "altText": "Mix and Jam 2020: Blocker Blunders"
             },
             "caption": {
-                "title": "Mix and Jam 2020: Blocker Blunders",
+                "title": "MnJ2020: Blocker Blunders",
                 "location": "Indie",
-                "subtitle": "Second Game Jam where you use your magical powers to create platforms and escape the forest!",
+                "subtitle": "My second Game Jam where you utilize magical powers to platform out of a forest!",
             }
         },
         {
             "id": "GameJam3",
             "frontPage": {
-                "isFeatured": "false",
-                "orderOfFeature": "1"
+                "isFeatured": "true",
+                "orderOfFeature": "5"
             },
             "image": {
                 "source": "assets/images/portfolio/gamePosts/LD48_1.png",
                 "altText": "Ludum Date 48: Sky Plummet"
             },
             "caption": {
-                "title": "Ludum Dare 48: Sky Plummet",
+                "title": "LD48: Sky Plummet",
                 "location": "Indie",
-                "subtitle": "How long can you divebomb for gold?",
+                "subtitle": "My third Game Jam where you need to dive bomb for gold as long as possible!",
+            }
+        },
+        {
+            "id": "ISD",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/gamePosts/ISD4.png",
+                "altText": "In Solo Duo Title Art"
+            },
+            "caption": {
+                "title": "Solo Developer",
+                "location": "Independent Venture",
+                "subtitle": "Independently developed in GameMaker, picked off from a Summer@USC final project",
+            }
+        },
+        {
+            "id": "Reflections",
+            "frontPage": {
+                "isFeatured": "false",
+                "orderOfFeature": "1"
+            },
+            "image": {
+                "source": "assets/images/portfolio/gamePosts/Reflections3.png",
+                "altText": "Reflections Title Screen"
+            },
+            "caption": {
+                "title": "Lead Programmer",
+                "location": "Chapman University",
+                "subtitle": "Collaborated in a Chapman University group project in Unity 5 for a Level Design Class",
             }
         }
     ],
