@@ -110,11 +110,11 @@ const allPortfolioItems = {
                 "orderOfFeature": "6"
             },
             "image": {
-                "source": "assets/images/portfolio/gamePosts/LD47_1.png",
+                "source": "assets/images/portfolio/gamePosts/LD_47_1.png",
                 "altText": "Hunger Pains Title Screen"
             },
             "caption": {
-                "title": "LD47: Hunger Pains",
+                "title": "LD_47: Hunger Pains",
                 "location": "Indie",
                 "subtitle": "My first Game Jam entry where you survive an onslaught of hungry customers as a sentient sushi!",
             }
@@ -126,11 +126,11 @@ const allPortfolioItems = {
                 "orderOfFeature": "1"
             },
             "image": {
-                "source": "assets/images/portfolio/gamePosts/MnJ2020_1.png",
+                "source": "assets/images/portfolio/gamePosts/MnJ_2020_1.png",
                 "altText": "Mix and Jam 2020: Blocker Blunders"
             },
             "caption": {
-                "title": "MnJ2020: Blocker Blunders",
+                "title": "MnJ_2020: Blocker Blunders",
                 "location": "Indie",
                 "subtitle": "My second Game Jam where you utilize magical powers to platform out of a forest!",
             }
@@ -142,11 +142,11 @@ const allPortfolioItems = {
                 "orderOfFeature": "5"
             },
             "image": {
-                "source": "assets/images/portfolio/gamePosts/LD48_1.png",
+                "source": "assets/images/portfolio/gamePosts/LD_48_1.png",
                 "altText": "Ludum Date 48: Sky Plummet"
             },
             "caption": {
-                "title": "LD48: Sky Plummet",
+                "title": "LD_48: Sky Plummet",
                 "location": "Indie",
                 "subtitle": "My third Game Jam where you need to dive bomb for gold as long as possible!",
             }

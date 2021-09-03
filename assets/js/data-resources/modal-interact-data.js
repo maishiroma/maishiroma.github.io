@@ -558,7 +558,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_4.gif",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_4.gif",
                     "style": "picture",
                     "subtitle": "Gameplay sample"
                 },
@@ -579,7 +579,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_Design_3.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_Design_3.png",
                     "style": "picture",
                     "subtitle": "Initial Brainstorm of the project, initially called Sushi Chef"
                 },
@@ -608,7 +608,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_Design_2.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_Design_2.png",
                     "style": "picture",
                     "subtitle": "Mock up of menus, UI flow, as well as a list of tasks to accomplish"
                 },
@@ -621,7 +621,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_Design_1.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_Design_1.png",
                     "style": "picture",
                     "subtitle": "Concept art of player as well as task planning for 2nd and 3rd day of the jam"
                 },
@@ -653,12 +653,12 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_2.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_2.png",
                     "style": "picture",
                     "subtitle": "Cutscene leading to the next stage"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD47_3.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_47_3.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the main gameplay loop"
                 },
@@ -704,7 +704,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_4.gif",
+                    "line": "assets/images/portfolio/gamePosts/MnJ_2020_4.gif",
                     "style": "picture",
                     "subtitle": "Gameplay Demo"
                 },
@@ -726,7 +726,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_2.png",
+                    "line": "assets/images/portfolio/gamePosts/MnJ_2020_2.png",
                     "style": "picture",
                     "subtitle": "Screenshot of the puzzle mechanic"
                 },
@@ -738,7 +738,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_Design_2.png",
+                    "line": "assets/images/portfolio/gamePosts/MnJ_2020_Design_2.png",
                     "style": "picture",
                     "subtitle": "Initial brainstorming component"
                 },
@@ -771,7 +771,7 @@ const modalData = {
                     "style": "block",
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_Design_1.png",
+                    "line": "assets/images/portfolio/gamePosts/MnJ_2020_Design_1.png",
                     "style": "picture",
                     "subtitle": "Day 2 of what needed to be done"
                 },
@@ -799,7 +799,7 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/MnJ2020_3.png",
+                    "line": "assets/images/portfolio/gamePosts/MnJ_2020_3.png",
                     "style": "picture",
                     "subtitle": "Screenshot of some platforming"
                 },
@@ -845,7 +845,7 @@ const modalData = {
             },
             "body": [
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD48_5.gif",
+                    "line": "assets/images/portfolio/gamePosts/LD_48_5.gif",
                     "style": "picture",
                     "subtitle": "Gameplay Demo"
                 },
@@ -930,7 +930,7 @@ const modalData = {
                     "style": "unordered"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD48_6.gif",
+                    "line": "assets/images/portfolio/gamePosts/LD_48_6.gif",
                     "style": "picture",
                     "subtitle": "Blended animation loop of the player starting a new round"
                 },
@@ -949,12 +949,12 @@ const modalData = {
                     "style": "block"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD48_3.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_48_3.png",
                     "style": "picture",
                     "subtitle": "Screenshot of second area of game"
                 },
                 {
-                    "line": "assets/images/portfolio/gamePosts/LD48_4.png",
+                    "line": "assets/images/portfolio/gamePosts/LD_48_4.png",
                     "style": "picture",
                     "subtitle": "Screenshot of third area of game"
                 },
