@@ -33,8 +33,8 @@ Menus:
       url: /blog
       weight: 1
     - identifier: dropdown
-      title: Portfolio List
-      name: Portfolio List
+      title: Portfolio
+      name: View Portfolio
       weight: 3
     - identifier: dropdown1
       title: Game Projects
@@ -114,7 +114,7 @@ params:
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Matthew Shiroma" # Brand name for the brand | default is the title variable
     disableSearch: false
-    # searchPlaceholder: "Search"
+    # searchPlaceholder: ""
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -201,52 +201,49 @@ params:
   # projects
   projects:
     enable: true
-    title: "Side Projects"
+    title: "Latest Projects"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: OracleMCServer
+        content: Terraform Module to deploy a simple Minecraft Server using Oracle Cloud's Always Free Tier.
+        image: /images/projects/oracleMCServer.jpg
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Details
+          link: https://github.com/maishiroma/OracleMCServer?tab=readme-ov-file#steps-to-deploy
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
+          - "Oracle"
+          - "Self Hosting"
+          - "Terraform"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+            url: https://github.com/maishiroma/OracleMCServer
+      - title: Sky Plummet
+        content: Ludum Dare 47 entry where you dive bomb endlessly into danger for treasure.
+        image: /images/projects/skyPlummetTitle.png
         featured:
-          name: Demo V2
-          link: /posts/my-first-post/
+          name: Play Now
+          link: https://kaabiikaze.itch.io/sky-plummet
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Unity"
+          - "Game Jam"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/maishiroma/LudumDare_48
+          - icon: fa fa-link
+            url: https://ldjam.com/events/ludum-dare/48/sky-plummet-my-compo-ludum-dare-48-entry
+      - title: Ghost Bop
+        content: A 2022 AXChibi game jam entry that follow a spooky spirit's desire to traverse around via its trusty hammer.
+        image: /images/projects/ghostBopTitle.png
+        featured:
+          name: Play Demo
+          link: https://kaabiikaze.itch.io/ghostbop
+        badges:
+          - "Godot"
+          - "Game Jam"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/maishiroma/AXChibiGameJam2022
+          - icon: fa fa-link
+            url: https://itch.io/jam/axchibigamejam2022/rate/1745857
 
   #Contact
   contact:
