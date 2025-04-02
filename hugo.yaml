@@ -125,7 +125,7 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: true
+      disableExperience: false
       disableEducation: true
       disableProjects: false
       disableAchievements: true
@@ -137,7 +137,7 @@ params:
     intro: "Oh hey, didn't see ya there!"
     title: "Matthew Shiroma"
     subtitle: "Always thinking ahead"
-    content: "A techie who has made their home in DevOps and Game Development. He specializes in automation, infrastructure, and fun. Whether he decides to launching scalable services in the cloud or enemies in the air, he focuses on smooth, reliable experiences for his clients."
+    content: "A techie who made his home in the DevOps and Game Development spheres. He specializes in automation, infrastructure, and game mechanics. Whether he decides to launch scalable services in the cloud or prototype favorite gameplay ideas, he always goes out swinging to the fences."
     image: /images/profilePic.jpg
     bottomImage:
       enable: true
@@ -166,11 +166,11 @@ params:
     title: "Bio"
     image: "/images/aboutMe.jpg"
     content: |-
-      Matthew Shiroma is an experienced DevOps Engineer, who's career led him to multiple avenues of the technology sphere. From working as a cloud consultant for major corporations to spearheading best practices at an animation startup studio, Matthew has been through many first times. His latest endeavour at Mindshow highlights his expertise of AWS, Unity, and Git. 
+      Matthew Shiroma is an experienced DevOps Engineer, who's career led him to multiple avenues of the technology sphere. From working as a cloud consultant for major corporations to spearheading best practices at an animation startup studio, Matthew has been through many first times. His latest endeavour at **Mindshow** highlights his expertise of AWS, Unity, and Git. 
 
-      Outside of work, Matthew strives to polish his craft in game development and discovering new open sourced toolings. He is also no stranger to a good game of Super Smash Brothers (tell him you main Kirby, he may go easy on you)! Matthew also grew an appreciation for the great outdoors as well, going on nature hikes or riding his foldable bike around SoCal. You may also catch him at his favorite tea spots as well, dabbing into digial art!
+      Outside of work, Matthew strives to polish his craft in game development and discovering new open sourced toolings. He is also no stranger to a good game of *Super Smash Brothers*! Matthew also grew an appreciation for the great outdoors as well, going on nature hikes or riding his foldable bike around SoCal. You may also catch him at his favorite tea spots as well, dabbing into digital art!
 
-      If you read this far, that's great! Feel free to reach out to him on Linkedln; he loves meeting like minded folks, such as yourself!     
+      If you read this far, that's great! Feel free to reach out to him on Linkedln; he loves meeting like minded folks, such as yourself!
     skills:
       enable: true
       title: "A sample of what Matthew specializes:"
@@ -188,7 +188,50 @@ params:
 
   # Experience
   experience:
-    enable: false
+    enable: true
+    title: Experiences
+    items:
+      - job: "Lead DevOps Engineer"
+        company: "Mindshow"
+        companyUrl: "https://www.mindshow.com/"
+        date: "Feb 2022 - present"
+        featuredLink:
+          enable: true
+          name: "Cameo x Mindshow Collaboration"
+          url: "https://www.cameo.com/chestercheetah?qid=1743606514&aaQueryId=4a90a5caad3d95b3a015f23e1efb7acd"
+        info:
+          enable: true
+          content: This highlights his initial role, **DevOps Engineer**, and his latest role, **Lead DevOps Engineer**
+        content: |
+          Matthew is currently providing his cloud expertise at the folks at **Mindshow**, a VR technology company that intersects with 3D animation. He initially started out as a **DevOps Engineer** back in 2022, but after a year, was promoted to **Lead DevOps Engineer**.
+          
+          Some of his major contributions include:
+            - Reorganize their AWS infrastructure under best practices
+            - Create a streamlined Unity build pipeline via GitHub Actions
+            - Translate an on-premise multiplayer matchmaking service to be containerized via AWS ECS
+            - Deploy public APIs to generate TextGrids and video renders via the cloud
+            - Dabble into Unity development, aid senior engineers with UI/UX tasks and new features for the Mindshow application
+
+      - job: "Cloud Engineer"
+        company: "Nebulaworks"
+        companyUrl: "https://www.nebulaworks.com"
+        date: "April 2019 - Feb 2022"
+        featuredLink:
+          enable: true
+          name: "PWC x Nebulaworks Docker Upgrade Case Study"
+          url: "https://www.nebulaworks.com/events/case-studies/media-entertainment-company-docker-ee-upgrade/"
+        info:
+          enable: true
+          content: This experience highlights his time as an intern, followed by being full time.
+        content: |
+          Matthew started his DevOps journey as a **Cloud Specialist** at **Nebulaworks**, a cloud consultancy company. By taking on two certifications, **Docker Certified Associate** and **Certified Kubernetes Administrator**, he bootstrapped his Linux and SysAdmin experience to new heights. 
+
+          Once brought on as a full time Cloud Engineer, Matthew continued to foster his knowledge to clients such as **PwC, FOX, and Gilead**. Some of the tasks he did was:
+          - Upgraded an enterprise Docker EE deployment to the newest version
+          - Architected a Atlantis CI/CD pipeline to be used within a large mono repository
+          - Created new Terraform Modules to be reused by team members for AWS deployments
+          - Delved into GCP and Azure, utilizing cloud native tooling to foster best practices
+          - Partook in networking communities such as **CloudNatives** to spread awareness of open source software
 
   # Education
   education:
