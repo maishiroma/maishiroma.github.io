@@ -1,0 +1,7 @@
+<div style="text-align: center;">
+    <img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}'
+        style="max-width: 100%; height: auto; margin-top: 1px; margin-bottom: 1px;" />
+    {{ with .Get "caption" }}
+    <p style="font-style: italic; font-size: 0.9em; margin-top: 0.5rem;">{{ . }}</p>
+    {{ end }}
+</div>

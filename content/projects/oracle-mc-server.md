@@ -1,6 +1,7 @@
 ---
 date: '2025-03-31T21:07:10-07:00'
-draft: false
+draft: true
+showInHome: true
 title: 'OracleMCServer Terraform Module'
 author: Matthew Shiroma
 image: /images/projects/oracleMCServer.jpg
@@ -9,6 +10,7 @@ tags:
   - Minecraft
   - Oracle
   - Terraform
-toc:
+toc: true
 ---
+
 
