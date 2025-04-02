@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'Volunteer Gameplay Programmer'
 author: Matthew Shiroma
-image: /images/projects/astraeTitle.png
+image: /images/projects/astrae/title.png
 description: "Led a Laguna College of Arts and Design graduate's thesis project, created entirely in Unity"
 tags:
   - Unity
@@ -33,7 +33,7 @@ Developing an original player controller, inspired by Tomb Radar 2013, where pla
     - If camera is too close to player, player will become transparent
     - Can zoom in, out and reset itself to be behind the player at any time.
 
-{{< centered-image src="/images/projects/astraeGameplay1.png" alt="Astrae gameplay" caption="Screenshot of the parkour system in the game, a central gameplay element." >}}
+{{< centered-image src="/images/projects/astrae/gameplay1.png" alt="Astrae gameplay" caption="Screenshot of the parkour system in the game, a central gameplay element." >}}
 
 Designed a parkour system, inspired by Mirror’s Edge.
 - Can climb up ledges and shimmy across them
@@ -63,7 +63,7 @@ Created the Shield Projector, a tool that the player can pick up and use during 
     - If the player is far away from the patrol bot after alerting it, it will go back into patrol mode.
 - Turrets: Hidden until the player is within its range, then appears and fires at the player until the player is out of its range.
 
-{{< centered-image src="/images/projects/astraeGameplay2.png" alt="Astrae screenshot" caption="Screenshot of one of the many enemies in the game." >}}
+{{< centered-image src="/images/projects/astrae/gameplay2.png" alt="Astrae screenshot" caption="Screenshot of one of the many enemies in the game." >}}
 
 ### Misc Contributions
 

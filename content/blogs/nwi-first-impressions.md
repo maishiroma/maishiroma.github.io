@@ -3,7 +3,7 @@ date: '2018-09-18T17:28:33-07:00'
 draft: false
 title: 'Nebulaworks First Impressions'
 author: Matthew Shiroma
-image: /images/blogs/2018/nwi_first_impressions/title.png
+image: /images/blogs/2018/nwiFirstImpressions/title.png
 description: "Blog post made in the first few months of being at Nebulaworks"
 tags:
   - Nebulaworks

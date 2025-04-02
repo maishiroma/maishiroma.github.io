@@ -3,7 +3,7 @@ date: '2019-05-20T17:03:07-07:00'
 draft: false
 title: 'Service Mesh Tips'
 author: Matthew Shiroma
-image: /images/videos/NebulaworksWhiteboard1.jpg
+image: /images/videos/nwiServiceMesh.jpg
 description: "An overview of best practices when it comes to using Service Mesh tools"
 tags:
   - Orchestration

@@ -3,7 +3,7 @@ date: '2020-06-01T17:12:03-07:00'
 draft: false
 title: 'Machine Image Creation Rules'
 author: Matthew Shiroma
-image: /images/articles/machineimage_blog.jpeg
+image: /images/articles/awsECRLogo.jpeg
 description: "Discusses best practices when creating machine images"
 tags:
   - Cloud

@@ -3,7 +3,7 @@ date: '2020-02-11T17:12:03-07:00'
 draft: false
 title: 'Terraform 0.12 Upgrade'
 author: Matthew Shiroma
-image: /images/articles/terraform_blog.jpg
+image: /images/articles/terraformLogo.jpg
 description: "Tutorial on upgrading your terraform deployment to 0.12"
 tags:
   - Upgrade

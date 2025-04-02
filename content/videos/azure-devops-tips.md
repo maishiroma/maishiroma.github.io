@@ -3,7 +3,7 @@ date: '2019-09-16T16:25:03-07:00'
 draft: false
 title: 'Azure DevOps Tips'
 author: Matthew Shiroma
-image: /images/videos/NebulaworksWhiteboard2.jpg
+image: /images/videos/nwiAzureDevOps.jpg
 description: "YouTube Tutorial going over some tricks when using Azure DevOps Pipelines"
 tags:
   - Azure
