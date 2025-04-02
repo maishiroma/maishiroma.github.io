@@ -3,7 +3,7 @@ date: '2018-09-17T17:28:33-07:00'
 draft: false
 title: 'Docker Bootcamp (AKA Learning Docker the LONG Way)'
 author: Matthew Shiroma
-image: /images/blogs/2018/docker_bootcamp/title.png
+image: /images/blogs/2018/dockerBootcamp/title.png
 description: "Blog post describing my experience with learning Docker for the first time."
 tags:
   - Nebulaworks

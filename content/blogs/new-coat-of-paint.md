@@ -3,7 +3,7 @@ date: '2021-09-08T17:28:33-07:00'
 draft: false
 title: 'New Coat of Paint'
 author: Matthew Shiroma
-image: /images/blogs/2021/new_coat_of_paint/title.png
+image: /images/blogs/2021/newCoatOfPaint/title.png
 description: "Blog post that describes the second iteration I did to clean up this site."
 tags:
   - Cleanup

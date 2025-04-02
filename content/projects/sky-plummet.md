@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'Sky Plummet'
 author: Matthew Shiroma
-image: /images/projects/skyPlummetTitle.png
+image: /images/projects/skyPlummet/title.png
 description: "My third Game Jam where you need to dive bomb for gold as long as possible"
 tags:
 - Unity
@@ -30,7 +30,7 @@ To summarize said mode:
 - The deadline for this is 48 hours as opposed to 72 hours
 - The code for the game must be in an open source repository
 
-{{< centered-image src="/images/projects/skyPlummetGameplay4.gif" alt="Sky Plummer gameplay" caption="Small sample of the core game loop" >}}
+{{< centered-image src="/images/projects/skyPlummet/gameplay4.gif" alt="Sky Plummer gameplay" caption="Small sample of the core game loop" >}}
 
 ## Design Process
 
@@ -38,7 +38,7 @@ I first got the idea from a small inspiration point of playing *Super Smash Brot
 
 **Toon Link** has a move in the game where one plunges downward, cutting through any opponent in your way. The feel of that attack was what led me to the concept of dive bombing downwards to dig through gold blocks. This concept also opened the door up for some other gameplay elements that did not come into the game due to time constraints.
 
-{{< centered-image src="/images/projects/skyPlummetDesign3.png" alt="Sky Plummet design" caption="Initial design of Block Busters, the original name of the game" >}}
+{{< centered-image src="/images/projects/skyPlummet/design3.png" alt="Sky Plummet design" caption="Initial design of Block Busters, the original name of the game" >}}
 
 Some of these are:
 - Random generated block structures to manurer around
@@ -46,7 +46,7 @@ Some of these are:
 
 Nevertheless, the reduction of scope allowed me to put more time on getting the core gameplay loop finalized, which allowed myself to spend more time on the presentation. I got the core gameplay done in the first day, so the second day was all about making the art, music and UI of the game.
 
-{{< centered-image src="/images/projects/skyPlummetDesign1.png" alt="Sky Plummet design" caption="Planning for Block Busters as well as some initial concept art of player" >}}
+{{< centered-image src="/images/projects/skyPlummet/design1.png" alt="Sky Plummet design" caption="Planning for Block Busters as well as some initial concept art of player" >}}
 
 ### Player Character
 
@@ -54,24 +54,24 @@ One particular aspect I would like to address is the player character. The playe
 
 I initially wanted to pay homage to my original concept and make a human sword fighter, but I realized that it would make the game less interesting. Then, I immediately thought of the game *Dig Dug* and I began to draw what is the player character for this game, a sentient cartoon drill robot.
 
-{{< centered-image src="/images/projects/skyPlummetDesign2.png" alt="Sky Plummet design" caption="Concept art of player character" >}}
+{{< centered-image src="/images/projects/skyPlummet/design2.png" alt="Sky Plummet design" caption="Concept art of player character" >}}
 
 One of the main reason besides the cartoon aspect that I went with this character choice is:
 - It was made of basic shapes that can be easily changed and colored
 - It distinguishes the scope of the world along with easily pointing out what the point of the game is
 - It allowed for some fun animation loops (one of which is shown below)
 
-{{< centered-image src="/images/projects/skyPlummetGameplay5.gif" alt="Player animation" caption="Blended animation loop of the player starting a new round" >}}
+{{< centered-image src="/images/projects/skyPlummet/gameplay5.gif" alt="Player animation" caption="Blended animation loop of the player starting a new round" >}}
 
 I'm really happy with this animation because I wanted to experiment with animation trees and invoking scripts within an animation in Unity. This action solidified my understanding of the game logic that needed to happen in a game, which is a lesson I learned in previous projects, but haven't put into practice as lately.
 
 ## Conclusion
 
-{{< centered-image src="/images/projects/skyPlummetGameplay2.png" alt="Sky Plummet gameplay" caption="Screenshot of second area of game" >}}
+{{< centered-image src="/images/projects/skyPlummet/gameplay2.png" alt="Sky Plummet gameplay" caption="Screenshot of second area of game" >}}
 
 My post mortem has more information on what else I enjoyed and what I wanted to improve on, go check it out in the External Links section! I also have links to play this game in itch.io as well as in the browser as well.
 
-{{< centered-image src="/images/projects/skyPlummetGameplay3.png" alt="Sky Plummet gameplay" caption="Screenshot of third area of game" >}}
+{{< centered-image src="/images/projects/skyPlummet/gameplay3.png" alt="Sky Plummet gameplay" caption="Screenshot of third area of game" >}}
 
 ## External Links
 

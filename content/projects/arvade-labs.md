@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'Internship @ Arvade Labs'
 author: Matthew Shiroma
-image: /images/projects/reignOfCthuluTitle.png
+image: /images/projects/arvadaLabs/title.png
 description: "Facilitated the creation of a companion app for a successful Kickstarter"
 tags:
   - Unity
@@ -25,7 +25,7 @@ A mobile Augmented Reality game designed in Unity 2017 and with Vuforia where th
 
 The player can interact with some of these models, by tapping on them.
 
-{{< centered-image src="/images/projects/reignOfCthuluGameplay2.png" alt="ROC Screenshot" caption="Screenshot of models and NPC" >}}
+{{< centered-image src="/images/projects/arvadaLabs/gameplay2.png" alt="ROC Screenshot" caption="Screenshot of models and NPC" >}}
 
 Tasks in this internship included:
 - Implementing the UI and navigation for the app.
@@ -40,7 +40,7 @@ Tasks in this internship included:
     - Jumps and flashes its light when touched
     - Fades out/fades in when it reaches a certain area
 
-{{< centered-image src="/images/projects/reignOfCthuluGameplay1.png" alt="ROC Screenshot" caption="Screenshot of AR video" >}}
+{{< centered-image src="/images/projects/arvadaLabs/gameplay1.png" alt="ROC Screenshot" caption="Screenshot of AR video" >}}
 
 Created the AR video interaction.
 - Used a video that was on a server

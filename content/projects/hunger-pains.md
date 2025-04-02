@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'Hunger Pains'
 author: Matthew Shiroma
-image: /images/projects/hungerPainsTitle.png
+image: /images/projects/hungerPains/title.png
 description: "My first Game Jam entry where you survive an onslaught of hungry customers as a sentient sushi"
 tags:
 - Unity
@@ -26,7 +26,7 @@ In my first game jam, I decided to go solo, since I wanted to use the experience
 
 In the end, I took away many valuable lessons from this experience, ranging from game scope, artistic visions, and most importantly, concise gameplay.
 
-{{< centered-image src="/images/projects/hungerPainsGameplay3.gif" alt="Hunger Pains gameplay" caption="Small sample of the core game loop" >}}
+{{< centered-image src="/images/projects/hungerPains/gameplay3.gif" alt="Hunger Pains gameplay" caption="Small sample of the core game loop" >}}
 
 ### Design Proccess
 
@@ -36,7 +36,7 @@ Hence, the game I made is called Hunger Pains, a survival game where you have la
 
 The gameplay is fairly basic, with movement in all directions, but because you are on a conveyor belt, you are limited in how much space you have to outmaneuver the main obstacle of the game, chopsticks."
 
-{{< centered-image src="/images/projects/hungerPainsDesign3.png" alt="Design Phase" caption="Initial Brainstorm of the project, initially called Sushi Chef" >}}
+{{< centered-image src="/images/projects/hungerPains/design3.png" alt="Design Phase" caption="Initial Brainstorm of the project, initially called Sushi Chef" >}}
 
 The initial design of the game focused centrally on the theme, designing the gameplay around it.
 
@@ -53,7 +53,7 @@ I also wanted to do more with the conveyor belt gimmick itself, but due to time 
 
 Nevertheless, the decision to scrap these ideas helped led this project to completion, since time was the biggest challenge in this game jam.
 
-{{< centered-image src="/images/projects/hungerPainsDesign2.png" alt="Design Phase" caption="Mock up of menus, UI flow, as well as a list of tasks to accomplish" >}}
+{{< centered-image src="/images/projects/hungerPains/design2.png" alt="Design Phase" caption="Mock up of menus, UI flow, as well as a list of tasks to accomplish" >}}
 
 ### Time Management
 
@@ -63,7 +63,7 @@ I also organized my thoughts out on what needs to be done, prioritizing tasks as
 
 This especially came up on the last day where I had a lot of artwork that still needed to be done
 
-{{< centered-image src="/images/projects/hungerPainsDesign1.png" alt="Design Phase" caption="Concept art of player as well as task planning for 2nd and 3rd day of the jam" >}}
+{{< centered-image src="/images/projects/hungerPains/design1.png" alt="Design Phase" caption="Concept art of player as well as task planning for 2nd and 3rd day of the jam" >}}
 
 My planning on these days along with getting the important tasks outlined played a large part in myself getting this game done to a completed state.
 
@@ -71,7 +71,7 @@ While a lot of ideas had to get scrapped, I realized that sometimes, it is best 
 
 ### Final Product
 
-{{< centered-image src="/images/projects/hungerPainsGameplay1.png" alt="Hunger Pains Gameplay" caption="Cutscene leading to the next stage" >}}
+{{< centered-image src="/images/projects/hungerPains/gameplay1.png" alt="Hunger Pains Gameplay" caption="Cutscene leading to the next stage" >}}
 
 The end result of the game was the following:
 - A high score survival round based game
@@ -80,7 +80,7 @@ The end result of the game was the following:
 
 Overall, I enjoyed making this game, and despite having some cut content, I found myself pleased with the end results. Below I linked some external links that you can follow to see more information about the game, which includes its GitHub Repository, a post mortem, and a link to the game itself (it is playable in browser!)
 
-{{< centered-image src="/images/projects/hungerPainsGameplay2.png" alt="Hunger Pains Gameplay" caption="Screenshot of the main gameplay loop" >}}
+{{< centered-image src="/images/projects/hungerPains/gameplay2.png" alt="Hunger Pains Gameplay" caption="Screenshot of the main gameplay loop" >}}
 
 ## External Links
 

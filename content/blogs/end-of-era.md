@@ -3,7 +3,7 @@ date: '2018-12-05T17:28:33-07:00'
 draft: false
 title: 'The End of an Era?'
 author: Matthew Shiroma
-image: /images/blogs/2018/end_of_an_era/title.png
+image: /images/blogs/2018/endOfAnEra/title.png
 description: "Blog post describing the conclusion of my Nebulaworks internship."
 tags:
   - Nebulaworks

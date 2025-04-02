@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'Blocker Blunders'
 author: Matthew Shiroma
-image: /images/projects/blockerBlundersTitle.png
+image: /images/projects/blockerBlunders/title.png
 description: "My second Game Jam where you utilize magical powers to platform out of a forest"
 tags:
 - Unity
@@ -24,19 +24,19 @@ Coming from my first Game Jam with a good hit, I wanted to continue the drive of
 
 The theme of this game jam is to mix up two generes that normally do not go together and come up with a solid game in 48 hours. I was excited to see how this will play out, so I started right away, with the end product called Blocker Blunders.
 
-{{< centered-image src="/images/projects/blockerBlundersGameplay3.gif" alt="Blocker Blunders gameplay" caption="Small sample of the core game loop" >}}
+{{< centered-image src="/images/projects/blockerBlunders/gameplay3.gif" alt="Blocker Blunders gameplay" caption="Small sample of the core game loop" >}}
 
 Blocker Blunders is a falling block puzzle game (akin to Tetris) turned into a 2D platformer. In other words, the goal of the game is to create a bridge of blocks formed via placing blocks strategically, jumping and maneuvering the levels.
 
 I was inspired by the recent surge of puzzle games in the market at the time, specifically Tetris 99 and Puyo Puyo Tetris, but also wanted to flesh out a genre that I really enjoy playing, which are platformers.
 
-{{< centered-image src="/images/projects/blockerBlundersGameplay1.png" alt="Blocker Blunders gameplay" caption="Screenshot of the puzzle mechanic" >}}
+{{< centered-image src="/images/projects/blockerBlunders/gameplay1.png" alt="Blocker Blunders gameplay" caption="Screenshot of the puzzle mechanic" >}}
 
 ## Design Goals
 
 Like the first game jam, I decided to go solo on this project as well, since I wanted to apply my lessons learned from the first game jam. Planning out the project was actually the easiest part of the project, since I got to my core idea rather fast.
 
-{{< centered-image src="/images/projects/blockerBlundersDesign2.png" alt="Blocker Blunders designing" caption="Initial brainstorming component" >}}
+{{< centered-image src="/images/projects/blockerBlunders/design2.png" alt="Blocker Blunders designing" caption="Initial brainstorming component" >}}
 
 My other idea I had was:
 - A resource management game, turned into a survival horror genre where the player has to work at a restaurant, serving up food to rabid paparazzi.
@@ -47,7 +47,7 @@ Once I got the idea down, I approached the project the same way as last time: ou
 
 This alone took a lot longer than I imagined, which ended up costing me some time in level design and/or scrapping some additional content.
 
-{{< centered-image src="/images/projects/blockerBlundersDesign1.png" alt="Blocker Blunders designing" caption="Day 2 of what needed to be done" >}}
+{{< centered-image src="/images/projects/blockerBlunders/design1.png" alt="Blocker Blunders designing" caption="Day 2 of what needed to be done" >}}
 
 ## Conclusion
 
@@ -60,7 +60,7 @@ One aspect that I am particularly proud of was how I made use of tilesets in Uni
 
 This is where I decided on using tilesets to build my levels and this saved me immense time to playtest the game right before the deadline arrived. It also helped make my levels look seamless despite being very simplistic.
 
-{{< centered-image src="/images/projects/blockerBlundersGameplay3.png" alt="Blocker Blunders designing" caption="Screenshot of some platforming" >}}
+{{< centered-image src="/images/projects/blockerBlunders/gameplay3.png" alt="Blocker Blunders designing" caption="Screenshot of some platforming" >}}
 
 While the finished project has some rough edges, I enjoyed the end product. It allowed me to really think more about project planning for game jams as well as consider what needs to get done.Plus it allowed me to work on some of my other skills as a game developer like art, level building, and UX design.
 

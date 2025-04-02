@@ -3,7 +3,7 @@ date: '2021-04-21T17:28:33-07:00'
 draft: false
 title: 'Reworking Again'
 author: Matthew Shiroma
-image: /images/blogs/2021/reworking_again/title.jpg
+image: /images/blogs/2021/reworkingAgain/title.jpg
 description: "Blog post that describes the first iteration I did to clean up this site."
 tags:
   - Cleanup

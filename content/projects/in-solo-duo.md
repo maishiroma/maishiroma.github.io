@@ -4,7 +4,7 @@ draft: false
 showInHome: false
 title: 'In Solo Duo'
 author: Matthew Shiroma
-image: /images/projects/inSoloDuoTitle.png
+image: /images/projects/inSoloDuo/title.png
 description: "Independently developed in GameMaker, picked off from a Summer@USC final project"
 tags:
 - Game Maker
@@ -25,7 +25,7 @@ Independent project originally made for the final project at the USC Summer Prog
 - Designed in GameMaker
 - Main gimmick centers around dynamic character swapping
 
-{{< centered-image src="/images/projects/inSoloDuoGameplay1.png" alt="In Solo Duo Gameplay" caption="Screenshot of the first world, while playing as the male character" >}}
+{{< centered-image src="/images/projects/inSoloDuo/gameplay1.png" alt="In Solo Duo Gameplay" caption="Screenshot of the first world, while playing as the male character" >}}
 
 ### Main Features
 
@@ -33,7 +33,7 @@ Independent project originally made for the final project at the USC Summer Prog
 - Different jump heights and walking speeds.
 - Specific actions each character can do (Dashing, shooting projectiles)
 
-{{< centered-image src="/images/projects/inSoloDuoGameplay2.png" alt="In Solo Duo Gameplay" caption="Screenshot of one of the later worlds, showcasing simple puzzle solving" >}}
+{{< centered-image src="/images/projects/inSoloDuo/gameplay2.png" alt="In Solo Duo Gameplay" caption="Screenshot of one of the later worlds, showcasing simple puzzle solving" >}}
 
 ### Platform Types
 
@@ -43,7 +43,7 @@ Independent project originally made for the final project at the USC Summer Prog
 - Destroy upon landing on it while as one character
 - Platforms that appear/disappear when hitting a switch
 
-{{< centered-image src="/images/projects/inSoloDuoGameplay3.png" alt="In Solo Duo Gameplay" caption="Screenshot of a door that moves the player to the next level" >}}
+{{< centered-image src="/images/projects/inSoloDuo/gameplay3.png" alt="In Solo Duo Gameplay" caption="Screenshot of a door that moves the player to the next level" >}}
 
 ### Enemy Types
 
@@ -54,4 +54,4 @@ Independent project originally made for the final project at the USC Summer Prog
 
 ## Links
 
-- [Source Code](https://github.com/maishiroma/Project_InSoloDuo)
+- [Source Code](https://github.com/maishiroma/Project_inSoloDuo)

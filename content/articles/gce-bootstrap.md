@@ -3,7 +3,7 @@ date: '2019-08-27T17:12:03-07:00'
 draft: false
 title: 'GCE Instance Bootstrapping with Terraform'
 author: Matthew Shiroma
-image: /images/articles/gke_blog.jpg
+image: /images/articles/gcpLogo.jpg
 description: "Discussing strategy for GCE Instance bootstrapping"
 tags:
   - GCE
