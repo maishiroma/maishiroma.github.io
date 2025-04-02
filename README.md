@@ -22,3 +22,6 @@ From there, it is a matter of knowing the hugo syntax and what hugo-profile offe
 ## How to Build and Release
 
 Follow the steps [here](https://gohugo.io/host-and-deploy/host-on-github-pages/)
+
+1. Open a PR and merge it into `master`
+1. GitHub Actions will auto run a deployment to build and publish to GitHub Pages
