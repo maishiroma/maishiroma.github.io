@@ -1,17 +1,24 @@
-# Matthew Shiroma's Portfolio
+# Matthew Shiroma's Personal Website
 
-- Welcome! This is the source code for my portfolio site! Here, you will find all of the things that I made across my years as a CS major.
-- This website uses the [Dark Joe](https://themewagon.com/themes/dark-joe-responsive-one-page-personal-website-template/) template.
+This is the source code for my personal website that I use for personal branding and to showcase my projects.
+
+As of 2025, I have changed the framework of the website to use `hugo` as my go to deployment method, using the [hugo-profile](https://github.com/gurusabarish/hugo-profile) theme.
 
 [Link to Page](https://maishiro.me)
 
 ## How To Develop
-Since this website is fairly simplistic with its usage, there isn't too many requirements to get going with development. All one needs is a text editor and a modern browser.
 
-To see a page rendered, one can simply enter:
+To work on this site, you will need the following:
+- `go` (>= 1.24.1)
+- `hugo` (>= v0.145.0-666444f0a52132f9fec9f71cf25b441cc6a4f355+extended)
+- Familiarity with the command line
 
-```bash
-$ open pageName.index
-```
+1. Make sure all of the dependencies are downloaded and required
+1. Run `hugo server -D`
+1. Navigate to localhost:1313
 
-in `Terminal` and the page should open in your configured browser.
+From there, it is a matter of knowing the hugo syntax and what hugo-profile offers. See their docs for details
+
+## How to Build and Release
+
+Follow the steps [here](https://gohugo.io/host-and-deploy/host-on-github-pages/)

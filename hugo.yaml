@@ -1,0 +1,333 @@
+baseURL: https://maishiro.me
+languageCode: en-us
+title: Matthew Shiroma's Portfolio
+
+module:
+  imports:
+   - path: github.com/gurusabarish/hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blogs
+      name: Blogs
+      title: Blogs
+      url: /blogs
+      weight: 1
+    - identifier: dropdown
+      title: Portfolio
+      name: View Portfolio
+      weight: 3
+    - identifier: dropdown1
+      title: All Projects
+      name: All Projects
+      url: /projects
+      parent: dropdown
+      weight: 1
+    - identifier: dropdown2
+      title: Featured Videos
+      name: Featured Videos
+      url: /videos
+      parent: dropdown
+      weight: 2
+    - identifier: dropdown3
+      title: Online Articles
+      name: Online Articles
+      url: /articles
+      parent: dropdown
+      weight: 3
+
+params:
+  title: "Matthew Shiroma"
+  description: "DevOps Engineer | Game Developer"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.ico"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Matthew Shiroma" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    searchPlaceholder: "Search anything!"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Oh hey, didn't see ya there!"
+    title: "Matthew Shiroma"
+    subtitle: "Always thinking ahead"
+    content: "A techie who has made their home in DevOps and Game Development. He specializes in automation, infrastructure, and fun. Whether he decides to launching scalable services in the cloud or enemies in the air, he focuses on smooth, reliable experiences for his clients."
+    image: /images/profilePic.jpg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://www.dropbox.com/scl/fi/kbfo5u58473ewdj7jkv6k/MS_General_Resume.pdf?rlkey=8xkpcolur1zvxluxgzcfaq218&dl=0"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/maishiroma
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/maishiroma
+        - icon: fab fa-x-twitter
+          url: https://twitter.com/maishiroma
+        - icon: fab fa-dropbox
+          url: https://www.dropbox.com/sh/m4pj1392oobcam7/AACrWrSbSBmf_wRzE5elZw6ka?dl=0
+        - icon: fa fa-link
+          url: https://bsky.app/profile/maishiroma.bsky.social
+
+  # About
+  about:
+    enable: true
+    title: "Bio"
+    image: "/images/aboutMe.jpg"
+    content: |-
+      Matthew Shiroma is an experienced DevOps Engineer, who's career led him to multiple avenues of the technology sphere. From working as a cloud consultant for major corporations to spearheading best practices at an animation startup studio, Matthew has been through many first times. His latest endeavour at Mindshow highlights his expertise of AWS, Unity, and Git. 
+
+      Outside of work, Matthew strives to polish his craft in game development and discovering new open sourced toolings. He is also no stranger to a good game of Super Smash Brothers (tell him you main Kirby, he may go easy on you)! Matthew also grew an appreciation for the great outdoors as well, going on nature hikes or riding his foldable bike around SoCal. You may also catch him at his favorite tea spots as well, dabbing into digial art!
+
+      If you read this far, that's great! Feel free to reach out to him on Linkedln; he loves meeting like minded folks, such as yourself!     
+    skills:
+      enable: true
+      title: "A sample of what Matthew specializes:"
+      items:
+        - "GitHub Actions"
+        - "Docker"
+        - "Linux"
+        - "Windows"
+        - "Bash"
+        - "Powershell"
+        - "Python"
+        - "C#"
+        - "Terraform"
+        - "Packer"
+
+  # Experience
+  experience:
+    enable: false
+
+  # Education
+  education:
+    enable: false
+
+  # Achievements
+  achievements:
+    enable: false
+
+  # projects
+  projects:
+    enable: true
+    title: "Highlighted Projects"
+    items:
+      - title: OracleMCServer
+        content: Terraform Module to deploy a simple Minecraft Server using Oracle Cloud's Always Free Tier.
+        image: /images/projects/oracleMCServer.jpg
+        featured:
+          name: Details
+          link: https://github.com/maishiroma/OracleMCServer?tab=readme-ov-file#steps-to-deploy
+        badges:
+          - "Oracle"
+          - "Self Hosting"
+          - "Terraform"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/maishiroma/OracleMCServer
+      - title: Sky Plummet
+        content: Ludum Dare 47 entry where you dive bomb endlessly into danger for treasure.
+        image: /images/projects/skyPlummetTitle.png
+        featured:
+          name: Play Now
+          link: https://kaabiikaze.itch.io/sky-plummet
+        badges:
+          - "Unity"
+          - "Game Jam"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/maishiroma/LudumDare_48
+          - icon: fa fa-link
+            url: https://ldjam.com/events/ludum-dare/48/sky-plummet-my-compo-ludum-dare-48-entry
+      - title: Ghost Bop
+        content: A 2022 AXChibi game jam entry that follow a spooky spirit's desire to traverse around via its trusty hammer.
+        image: /images/projects/ghostBopTitle.png
+        featured:
+          name: Play Demo
+          link: https://kaabiikaze.itch.io/ghostbop
+        badges:
+          - "Godot"
+          - "Game Jam"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/maishiroma/AXChibiGameJam2022
+          - icon: fa fa-link
+            url: https://itch.io/jam/axchibigamejam2022/rate/1745857
+      - title: Reign Of Cthulu
+        content: A Kickstarter project inspired by Pokemon Go and Hearthstone, leveraged Mobile AR to engage players with physical merchandise.
+        image: /images/projects/reignOfCthuluTitle.png
+        featured:
+          name: Kickstarter Link
+          link: https://www.kickstarter.com/projects/bloodofcthulhu/first-ever-ar-native-game/description
+        badges:
+          - "Unity"
+          - "Mobile AR"
+          - "Intern Programmer"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtu.be/-2hI197w3ao
+      - title: Astrae
+        content: A Laguna College of Arts and Design Thesis project where you explore a dangerous cave system using tools found along the way.
+        image: /images/projects/astraeTitle.png
+        featured:
+          name: Details
+          link: /projects/astrae/
+        badges:
+          - "Unity"
+          - "Contract Programmer"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtu.be/UsKU4cPQtnk
+      - title: Beyond Space Energy Corp
+        content: A Chapman University Senior Thesis project where one protects themselves from hostile aliens as they harvest valuable gems.
+        image: /images/projects/beyondSpaceEnergyCorpTitle.jpg
+        featured:
+          name: Details
+          link: /projects/beyond_space_energy_corp/
+        badges:
+          - "Unity"
+          - "Contract Programmer"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtu.be/5KCq2qqO03A
+          - icon: fa fab-github
+            url: https://github.com/maishiroma/CPSC440GameProject
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact"
+    content: Want to learn more about Matthew? Or connect with him? Feel free to reach out to him! You can either email him using this handy button or shoot him a message on his socials.
+    btnName: Email
+    btnLink: mailto:maishiroma@pm.me
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Blog Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/maishiroma
+      linkedin: https://www.linkedin.com/in/maishiroma
+      twitter: https://twitter.com/maishiroma
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    watch: "Watch"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
