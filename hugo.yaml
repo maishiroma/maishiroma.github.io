@@ -128,7 +128,7 @@ params:
       disableExperience: false
       disableEducation: true
       disableProjects: false
-      disableAchievements: true
+      disableAchievements: false
       disableContact: false
 
   # Hero
@@ -239,7 +239,14 @@ params:
 
   # Achievements
   achievements:
-    enable: false
+    enable: true
+    items:
+      - title: Docker Certified Associate (2018-2020)
+        content: Got certified under Docker regarding expert knowledge of Docker, containerization, and use cases. (ID 11843513)
+        url: https://training.mirantis.com/certification/dca-certification-exam/
+      - title: Certified Kubernetes Administrator (2018-2020)
+        content: Got certified under Linux Foundation for showcasing administrator knowledge of clustering, microservices, and management of K8S clusters (CKA-1800-0800-0100)
+        url: https://portal.linuxfoundation.org/certification/verify-certifications
 
   # projects
   projects:
