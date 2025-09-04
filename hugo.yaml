@@ -149,15 +149,16 @@ params:
       newPage: true
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/maishiroma
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/maishiroma
-        - icon: fab fa-x-twitter
-          url: https://twitter.com/maishiroma
+        - icon: fab fa-github
+          url: https://github.com/maishiroma
         - icon: fab fa-dropbox
           url: https://www.dropbox.com/sh/m4pj1392oobcam7/AACrWrSbSBmf_wRzE5elZw6ka?dl=0
-        - icon: fa fa-link
+        - icon: fab fa-x-twitter
+          url: https://twitter.com/maishiroma
+      customIcons:
+        - icon: /siteIcons/blueskySimple.png
           url: https://bsky.app/profile/maishiroma.bsky.social
 
   # About
@@ -194,7 +195,7 @@ params:
       - job: "Lead DevOps Engineer"
         company: "Mindshow"
         companyUrl: "https://www.mindshow.com/"
-        date: "Feb 2022 - present"
+        date: "Feb 2022 - July 2025"
         featuredLink:
           enable: true
           name: "Cameo x Mindshow Collaboration"
@@ -203,7 +204,7 @@ params:
           enable: true
           content: This highlights his initial role, **DevOps Engineer**, and his latest role, **Lead DevOps Engineer**
         content: |
-          Matthew is currently providing his cloud expertise at the folks at **Mindshow**, a VR technology company that intersects with 3D animation. He initially started out as a **DevOps Engineer** back in 2022, but after a year, was promoted to **Lead DevOps Engineer**.
+          Matthew provided his cloud expertise at the folks at **Mindshow**, a VR technology company that intersects with 3D animation. He initially started out as a **DevOps Engineer** back in 2022, but after a year, was promoted to **Lead DevOps Engineer**.
           
           Some of his major contributions include:
             - Reorganize their AWS infrastructure under best practices
@@ -324,7 +325,7 @@ params:
         image: /images/projects/beyondSpaceEnergyCorp/title.jpg
         featured:
           name: Details
-          link: /projects/beyond_space_energy_corp/
+          link: /projects/beyond-space-energy-corp/
         badges:
           - "Unity"
           - "Contract Programmer"
@@ -353,6 +354,7 @@ params:
       github: https://github.com/maishiroma
       linkedin: https://www.linkedin.com/in/maishiroma
       twitter: https://twitter.com/maishiroma
+      bluesky: google.com
 
   # List pages like blogs and posts
   listPages:
