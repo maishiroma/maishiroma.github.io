@@ -339,9 +339,10 @@ params:
   contact:
     enable: true
     title: "Contact"
-    content: Want to learn more about Matthew? Or connect with him? Feel free to reach out to him! You can either email him using this handy button or shoot him a message on his socials.
-    btnName: Email
-    btnLink: mailto:maishiroma@pm.me
+    content: Interested in keeping in touch? You can grab Matthew's contact below! (Bonus points if you meet him over tea!)
+    hiddenBtnName: Click to Reveal
+    btnName: Download Contact Information Here
+    btnLink: L2MvbXMudmNm # Base64 Encoded version of /c/ms.vcf
 
   footer:
     recentPosts:

@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 18.6.2//EN
+N:Shiroma;Matthew;;;
+FN:Matthew Shiroma
+ORG:Lead DevOps Engineer;
+EMAIL;type=INTERNET;type=WORK;type=pref:maishiroma@pm.me
+TEL;type=CELL;type=VOICE;type=pref:(657) 567-4977
+item1.URL;type=pref:https://maishiro.me
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
