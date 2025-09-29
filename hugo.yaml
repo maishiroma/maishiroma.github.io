@@ -144,7 +144,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://www.dropbox.com/scl/fi/kbfo5u58473ewdj7jkv6k/MS_General_Resume.pdf?rlkey=8xkpcolur1zvxluxgzcfaq218&dl=0"
+      url: https://www.dropbox.com/scl/fi/kbfo5u58473ewdj7jkv6k/MS_General_Resume.pdf?rlkey=8xkpcolur1zvxluxgzcfaq218&dl=1
       download: false
       newPage: true
     socialLinks:
